@@ -1,0 +1,1630 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Trastornos del pensamiento y de la sensopercepción · MedON Student</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* MedON Student · Semiología psiquiátrica (azul) */
+:root{
+  --bg:#F3F7FB; --surface:#FFFFFF; --stage:#F7FAFD; --ink:#14304A; --muted:#4F6B85; --line:#D6E3EF;
+  --brand:#0F3F6B; --brand-ink:#EEF5FC; --brand-muted:#BCD6EE; --green:#1F6FB2; --brand-hl:#8EC5F5;
+  --glu:#C97A0C; --gaba:#2C66C9; --da:#BE3A75; --drug:#6550CC; --alert:#C2412B;
+  --f-display:'Outfit',ui-sans-serif,system-ui,sans-serif;
+  --f-body:'Outfit',ui-sans-serif,system-ui,sans-serif;
+  --f-mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+  --r:14px;
+}
+
+*{box-sizing:border-box}
+html{scroll-padding-top:136px}
+.mtop{position:sticky;top:0;z-index:30;background:#fff;border-bottom:1px solid var(--line)}.mtop .in{max-width:1180px;margin:0 auto;padding:8px 16px;display:flex;align-items:center}.mtop a{display:flex;align-items:center;gap:16px;text-decoration:none;color:var(--brand);min-width:0}.mtop .lg{width:132px;height:54px;overflow:hidden;position:relative;flex-shrink:0}.mtop .lg img{position:absolute;width:149px;left:-8px;top:-49px;mix-blend-mode:multiply;filter:hue-rotate(70deg) saturate(1.1)}.mtop .t{display:flex;flex-direction:column;gap:2px;padding-left:16px;border-left:1px solid var(--line);min-width:0}.mtop .t b{font-family:var(--f-display);font-size:17px;font-weight:700;line-height:1.2}.mtop .t small{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;color:var(--green)}@media (max-width:560px){.mtop .lg{width:104px;height:44px}.mtop .lg img{width:118px;left:-6px;top:-39px}.mtop .t b{font-size:15px}.mtop .t{padding-left:12px}}
+.foot2{max-width:900px;margin:0 auto;padding:30px 16px;display:grid;gap:12px;justify-items:center;text-align:center;color:#dbe8f5}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.55;margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;line-height:1.15;margin:0}
+p{margin:0}
+a{color:var(--green)}
+.eyebrow{font-family:var(--f-display);font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--green)}
+
+/* Hero */
+.hero{background:var(--brand);color:var(--brand-ink)}
+.hero .wrap{padding-block:48px 40px;display:grid;gap:32px;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);align-items:end}
+.hero .eyebrow{color:var(--brand-muted)}
+.hero h1{font-size:clamp(32px,4.4vw,50px);font-weight:700;margin-top:10px}
+.hero h1 em{font-style:normal;color:var(--brand-hl)}
+.hero .lede{margin-top:14px;color:var(--brand-muted);max-width:54ch}
+.hero .doc{margin-top:18px;font-family:var(--f-display);font-weight:500;font-size:15px}
+.hero .doc small{display:block;font-family:var(--f-body);color:var(--brand-muted);font-size:14px;font-weight:400}
+.toc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;list-style:none;margin:0;padding:0}
+.toc a{display:grid;grid-template-columns:30px 1fr;gap:10px;align-items:start;text-decoration:none;color:var(--brand-ink);padding:10px 12px;border:1px solid rgba(255,255,255,.14);border-radius:var(--r);transition:background .2s,border-color .2s;height:100%}
+.toc a:hover,.toc a:focus-visible{background:rgba(255,255,255,.06);border-color:rgba(79,208,138,.6);outline:none}
+.toc b{font-family:var(--f-mono);font-size:13px;color:var(--brand-hl);line-height:22px}
+.toc span{font-family:var(--f-display);font-weight:500;font-size:14.5px;line-height:1.3}
+.toc small{display:block;font-family:var(--f-body);font-weight:400;color:var(--brand-muted);font-size:13px;margin-top:2px}
+
+/* Nav */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
+.nav{position:sticky;top:71px;z-index:25;background:var(--surface);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;gap:4px;align-items:center;padding-block:8px;overflow-x:auto;scrollbar-width:none}
+.nav a{font:600 13.5px/1 var(--f-display);padding:9px 12px;border-radius:8px;color:var(--muted);text-decoration:none;white-space:nowrap}
+.nav a b{font-family:var(--f-mono);font-weight:500;margin-right:6px;color:var(--green)}
+.nav a:hover{color:var(--ink)}
+.nav a.on{background:color-mix(in srgb,var(--green) 13%,transparent);color:var(--ink)}
+
+/* Capítulos */
+.ch-head{background:var(--brand);color:var(--brand-ink)}
+.ch-head .wrap{padding-block:40px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:24px;align-items:center}
+.ch-head .num{font:500 clamp(48px,7vw,84px)/1 var(--f-mono);color:var(--brand-hl)}
+.ch-head h2{font-size:clamp(26px,3.4vw,38px);font-weight:700}
+.ch-head p{color:var(--brand-muted);margin-top:6px}
+.sub{padding-block:52px;border-bottom:1px solid var(--line)}
+.two{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.25fr);gap:40px;align-items:start}
+.one{display:grid;gap:24px}
+.sub h2{font-size:clamp(24px,2.8vw,32px);font-weight:700;margin-top:8px}
+.sub h2 .hl,.hl{color:var(--green)}
+.text{display:grid;gap:16px;min-width:0;align-content:start}
+.text p{color:var(--muted);max-width:62ch}
+.text p strong{color:var(--ink);font-weight:600}
+.big{font-size:20px;line-height:1.45;color:var(--ink)!important;max-width:44ch}
+.big strong{color:var(--green)!important}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:10px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:28px 1fr;gap:10px;align-items:start;font-size:16px}
+.steps li::before{counter-increment:s;content:counter(s);font:500 12px/26px var(--f-mono);text-align:center;width:26px;height:26px;border-radius:50%;border:1px solid var(--line);color:var(--muted)}
+.ticks{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.ticks li{padding-left:18px;position:relative;font-size:16px}
+.ticks li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:2px;background:var(--green)}
+.note{font-size:14px;color:var(--muted);border-left:2px solid var(--line);padding-left:12px}
+.legend{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:14px;color:var(--muted)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+
+.lab{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;min-width:0}
+.lab canvas{display:block;width:100%;background:var(--stage)}
+.lab .bar{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 16px;border-bottom:1px solid var(--line);font-size:13px;color:var(--muted)}
+.lab .bar b{font-family:var(--f-display);font-weight:600;color:var(--ink);font-size:14px}
+.ctrl{display:grid;gap:14px;padding:16px;border-top:1px solid var(--line)}
+.row{display:grid;gap:6px}
+.row .lbl{display:flex;justify-content:space-between;gap:12px;font-size:15px}
+.row .lbl output{font-family:var(--f-mono);font-size:13px;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+.row small{color:var(--muted);font-size:13px}
+input[type=range]{width:100%;accent-color:var(--green);margin:0}
+.toggles{display:flex;flex-wrap:wrap;gap:8px 18px}
+.toggles label{display:flex;gap:8px;align-items:center;font-size:15px;cursor:pointer}
+.toggles input{accent-color:var(--green);width:17px;height:17px;flex:none}
+.btns{display:flex;flex-wrap:wrap;gap:8px}
+.btn,.chip{font:600 14px/1.1 var(--f-display);padding:9px 13px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer;text-align:left}
+.chip{border-radius:999px;white-space:nowrap}
+.btn:hover,.chip:hover{border-color:var(--green)}
+.btn.primary{background:var(--green);border-color:var(--green);color:var(--surface)}
+.btn[aria-pressed="true"],.chip[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:var(--surface)}
+.chip:focus-visible,.btn:focus-visible,button:focus-visible,input:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+.grp{display:grid;gap:6px}
+.grp>span{font:600 11.5px var(--f-display);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.meters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border-top:1px solid var(--line)}
+.meter{background:var(--surface);padding:12px 14px;display:grid;gap:6px;min-width:0}
+.meter span{font-size:12.5px;color:var(--muted);line-height:1.25}
+.meter b{font:600 18px/1 var(--f-display);font-variant-numeric:tabular-nums}
+.track{height:6px;border-radius:3px;background:var(--line);overflow:hidden}
+.track i{display:block;height:100%;width:0;border-radius:3px;transition:width .35s ease}
+.pill{display:inline-block;font:600 12px/1 var(--f-display);padding:5px 9px;border-radius:999px;border:1px solid currentColor;white-space:nowrap}
+.ok{color:var(--green)} .warn{color:var(--glu)} .bad{color:var(--alert)}
+.panel{padding:16px;display:grid;gap:10px;border-top:1px solid var(--line)}
+.panel h3{font-size:19px}
+.panel .tagl{font:600 11.5px var(--f-display);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* Tipos de pensamiento */
+.types{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.type{text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px;cursor:pointer;color:var(--ink);font:inherit;display:grid;gap:6px;align-content:start;transition:border-color .2s,transform .2s}
+.type:hover{border-color:var(--green);transform:translateY(-2px)}
+.type b{font:500 12px var(--f-mono);color:var(--green)}
+.type strong{font:600 16px var(--f-display)}
+.type p{font-size:14px;color:var(--muted)}
+.type ul{margin:0;padding-left:18px;font-size:14px;color:var(--ink);display:none}
+.type[aria-expanded="true"]{border-color:var(--green);background:color-mix(in srgb,var(--green) 6%,var(--surface))}
+.type[aria-expanded="true"] ul{display:block}
+
+/* Tabla examen mental */
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:15px}
+th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:600 12px var(--f-display);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+td:first-child{font:600 16px var(--f-display);color:var(--green)}
+tr:last-child td{border-bottom:0}
+
+.transcript{padding:14px 16px;border-top:1px solid var(--line);display:grid;gap:6px;font-size:15.5px;min-height:118px}
+.transcript .who{font:600 12px var(--f-display);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.transcript .pt{color:var(--ink)}
+.transcript .pt span{animation:fadein .35s ease}
+@keyframes fadein{from{opacity:.2}to{opacity:1}}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;display:grid;gap:8px;align-content:start;min-width:0}
+.card h3{font-size:17px}
+.card p{font-size:15px;color:var(--muted)}
+.card .pill{justify-self:start}
+.card .k{font:600 11.5px var(--f-display);letter-spacing:.12em;text-transform:uppercase;color:var(--green)}
+.cmp{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.cmp .card{border-top:3px solid var(--glu)}
+.cmp .card+.card{border-top-color:var(--da)}
+
+/* Sentidos */
+.senses{display:flex;flex-wrap:wrap;gap:8px}
+
+/* Delirio: creencia */
+.belief{display:grid;gap:12px;padding:16px}
+.convic{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:center}
+.convic .track{height:12px;border-radius:6px}
+.convic .track i{border-radius:6px}
+.convic b{font:600 18px var(--f-mono);font-variant-numeric:tabular-nums}
+.chat{display:grid;gap:8px;min-height:150px;align-content:start}
+.msg{padding:10px 12px;border-radius:10px;font-size:15px;max-width:92%;animation:fadein .35s ease}
+.msg.dr{background:var(--bg);border:1px solid var(--line);justify-self:end}
+.msg.pt{background:color-mix(in srgb,var(--da) 9%,var(--surface));border:1px solid color-mix(in srgb,var(--da) 35%,var(--line))}
+.msg small{display:block;font:600 11px var(--f-display);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+
+/* Tipos de delirio */
+.dgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:20px;align-items:start}
+.dlist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.dlist button{text-align:left;font:600 14.5px/1.25 var(--f-display);padding:11px 12px;border-radius:9px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;display:grid;grid-template-columns:28px 1fr;gap:6px;align-items:center}
+.dlist button b{font:500 12px var(--f-mono);color:var(--muted)}
+.dlist button:hover{border-color:var(--da)}
+.dlist button[aria-pressed="true"]{border-color:var(--da);background:color-mix(in srgb,var(--da) 10%,var(--surface))}
+.ddet{background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--da);border-radius:12px;padding:22px;display:grid;gap:12px}
+.ddet h3{font-size:24px}
+.ddet .q{font-size:18px;color:var(--ink)}
+.ddet .quote{font-style:italic;color:var(--da);font-size:17px}
+
+/* Psicosis */
+.eq{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:14px;padding:30px 16px;background:var(--surface);border:1px solid var(--line);border-radius:14px}
+.orb{width:128px;height:128px;border-radius:50%;display:grid;place-items:center;text-align:center;font:600 15px var(--f-display);color:var(--ink);border:2px solid;transition:transform .9s cubic-bezier(.6,0,.3,1),opacity .6s}
+.orb.i{border-color:var(--glu);background:color-mix(in srgb,var(--glu) 12%,transparent)}
+.orb.a{border-color:var(--gaba);background:color-mix(in srgb,var(--gaba) 12%,transparent)}
+.orb.d{border-color:var(--da);background:color-mix(in srgb,var(--da) 12%,transparent)}
+.orb.p{border-color:var(--green);background:var(--green);color:var(--surface);font-size:18px;transform:scale(.9)}
+.op{font:500 26px var(--f-mono);color:var(--muted);transition:opacity .5s}
+.eq.merged .orb.i{transform:translateX(150px) scale(.6);opacity:.35}
+.eq.merged .orb.d{transform:translateX(-150px) scale(.6);opacity:.35}
+.eq.merged .orb.a{transform:scale(.6);opacity:.35}
+.eq.merged .op{opacity:0}
+.eq.merged .orb.p{transform:translateX(-230px) scale(1.25);box-shadow:0 0 0 10px color-mix(in srgb,var(--green) 20%,transparent)}
+.impact{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.impact .card{border-left:3px solid var(--green)}
+.impact .card b{font:500 30px var(--f-mono);color:var(--green)}
+
+/* Epidemiología */
+.dots{display:grid;grid-template-columns:repeat(20,1fr);gap:5px;padding:18px;max-width:440px}
+.dots i{aspect-ratio:1;border-radius:50%;background:var(--line)}
+.dots i.hit{background:var(--da);animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 5px color-mix(in srgb,var(--da) 25%,transparent)}}
+.onset{padding:16px;display:grid;gap:10px;border-top:1px solid var(--line)}
+.oline{display:grid;grid-template-columns:72px minmax(0,1fr);gap:10px;align-items:center;font-size:14px}
+.oscale{position:relative;height:22px;background:var(--bg);border-radius:4px}
+.oscale i{position:absolute;top:0;bottom:0;border-radius:4px}
+.oticks{display:grid;grid-template-columns:72px minmax(0,1fr);gap:10px;font:500 11px var(--f-mono);color:var(--muted)}
+.oticks div{display:flex;justify-content:space-between}
+.stat{font:700 clamp(44px,6vw,64px)/1 var(--f-display);color:var(--green)}
+
+/* DSM */
+.dsm{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0}
+.dsm .in{padding:16px;display:grid;gap:14px;border-right:1px solid var(--line)}
+.dsm .out{padding:16px;display:grid;gap:12px;align-content:start}
+.crit{display:grid;gap:6px}
+.crit div{display:grid;grid-template-columns:28px 1fr;gap:8px;font-size:15px;align-items:start}
+.crit div b{font:600 12px/24px var(--f-mono);text-align:center;border-radius:6px;border:1px solid var(--line);color:var(--muted)}
+.crit div.met b{background:var(--green);border-color:var(--green);color:var(--surface)}
+.crit div.fail b{border-color:var(--alert);color:var(--alert)}
+.dx{border:1px solid var(--line);border-radius:10px;padding:14px;display:grid;gap:6px}
+.dx h3{font-size:20px}
+.dx.yes{border-color:var(--green);background:color-mix(in srgb,var(--green) 8%,transparent)}
+.dx.alt{border-color:var(--glu);background:color-mix(in srgb,var(--glu) 8%,transparent)}
+.dx p{font-size:14.5px;color:var(--muted)}
+.tl{position:relative;height:46px;margin-top:4px}
+.tl .seg{position:absolute;top:8px;height:14px;border-radius:3px}
+.tl .mk{position:absolute;top:26px;font:500 10.5px var(--f-mono);color:var(--muted);transform:translateX(-50%);white-space:nowrap}
+.tl .ptr{position:absolute;top:0;width:3px;height:30px;background:var(--ink);border-radius:2px;transform:translateX(-50%);transition:left .3s}
+
+details{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:0 16px}
+details+details{margin-top:8px}
+summary{cursor:pointer;padding:13px 0;font:600 16px var(--f-display);display:flex;gap:12px;align-items:center;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary b{font:500 12px var(--f-mono);color:var(--green)}
+summary::after{content:"+";margin-left:auto;font:500 18px var(--f-mono);color:var(--muted)}
+details[open] summary::after{content:"–"}
+details p{padding-bottom:14px;color:var(--muted);font-size:15.5px}
+
+/* Fisiopatología */
+.guide{border-bottom:1px solid var(--line);padding:14px 16px;display:grid;gap:8px;background:color-mix(in srgb,var(--green) 6%,var(--surface))}
+.guide .gh{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.gdots{display:flex;gap:5px;flex-wrap:wrap}
+.gdots button{width:24px;height:24px;border-radius:50%;border:1px solid var(--line);background:var(--surface);font:500 11px var(--f-mono);color:var(--muted);cursor:pointer;padding:0}
+.gdots button.seen{border-color:var(--green);color:var(--green)}
+.gdots button[aria-current="step"]{background:var(--green);border-color:var(--green);color:var(--surface)}
+.guide h3{font-size:17px}
+.guide p{font-size:15.5px;color:var(--muted);min-height:4.6em}
+.guide p strong{color:var(--ink)}
+.gnav{display:flex;gap:8px;flex-wrap:wrap}
+.btn:disabled{opacity:.45;cursor:default}
+.key{display:flex;flex-wrap:wrap;gap:6px 16px;padding:10px 16px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+.key span{display:inline-flex;align-items:center;gap:6px}
+.key i{display:inline-block;width:16px;height:3px;border-radius:2px;flex:none}
+.key i.dot{width:9px;height:9px;border-radius:50%}
+.key i.tri{width:0;height:0;border-radius:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:10px solid var(--glu)}
+.key i.dash{height:0;border-top:2px dashed currentColor}
+.key i.ring{width:11px;height:11px;border-radius:50%;border:2px solid var(--gaba)}
+.scen{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:12px 14px;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.scen label{font:600 12px var(--f-display);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-right:4px}
+.custom{font-size:13px;color:var(--muted)}
+.feed{display:grid;gap:8px;padding:14px 16px;border-top:1px solid var(--line);min-height:270px;align-content:start}
+.feed h3{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.stim{display:grid;grid-template-columns:minmax(0,1fr) 110px;gap:4px 14px;padding:10px 12px;border:1px solid var(--line);border-radius:8px;align-items:center}
+.stim.new{animation:slide .45s ease}
+@keyframes slide{from{transform:translateY(-8px);opacity:.3}to{transform:none;opacity:1}}
+.stim .nm{font-weight:600;font-size:15px}
+.stim .tag{grid-column:1/-1;font-size:13.5px;color:var(--muted)}
+.stim .tag q{color:var(--da);font-style:italic}
+.stim.aberr{border-color:var(--da);background:color-mix(in srgb,var(--da) 7%,transparent)}
+.stim .sal{display:grid;gap:3px;font:500 11px var(--f-mono);color:var(--muted);text-align:right}
+.int-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:24px;align-items:start}
+.diagram{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px}
+.diagram svg{display:block;width:100%;min-width:640px;height:auto}
+.node rect{fill:var(--stage);stroke:var(--line);stroke-width:1.2}
+.node .fill{stroke:none}
+.node text{font-family:var(--f-display);font-size:13px;font-weight:600;fill:var(--ink)}
+.node text.sub{font-family:var(--f-body);font-weight:400;font-size:12px;fill:var(--muted)}
+.edge{fill:none;stroke-linecap:round;stroke-dasharray:6 7;animation:flow 1.2s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-26}}
+.symp{display:grid;gap:12px}
+.sc{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;gap:8px}
+.sc .hd{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.sc h3{font-size:17px}
+.sc b{font:600 15px var(--f-mono);font-variant-numeric:tabular-nums}
+.sc p{font-size:14px;color:var(--muted)}
+.sc .track{height:8px}
+.reading{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--green);border-radius:10px;padding:16px 18px;display:grid;gap:8px}
+.reading p{font-size:16px}
+.syms{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.syms .card{border-top:3px solid var(--da)}
+.syms .card:nth-child(2){border-top-color:var(--glu)}
+.syms .card:nth-child(3){border-top-color:var(--gaba)}
+.syms ul{margin:0;padding-left:18px;font-size:15px;display:grid;gap:4px}
+.video{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;padding:18px;background:var(--surface);border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--ink)}
+.video:hover{border-color:var(--green)}
+.video .play{width:52px;height:52px;border-radius:50%;background:var(--alert);display:grid;place-items:center;color:#fff;font-size:20px}
+
+/* Otros trastornos */
+.dur{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;display:grid;gap:10px;overflow-x:auto}
+.drow{display:grid;grid-template-columns:170px minmax(560px,1fr);gap:12px;align-items:center;font-size:14.5px}
+.drow .lane{position:relative;height:30px;background:var(--bg);border-radius:5px}
+.drow .lane>b{position:absolute;top:-4px;bottom:-4px;width:1px;background:var(--line);transform:translateX(-.5px)}
+.drow .lane i{position:absolute;top:0;bottom:0;border-radius:5px;transform-origin:left;animation:grow 1s ease both;display:flex;align-items:center;justify-content:center;padding:0 8px;font:600 12px/1 var(--f-mono);font-style:normal;color:var(--surface);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@keyframes grow{from{transform:scaleX(.05)}to{transform:none}}
+.drow .lane em{position:absolute;top:2px;font:500 11px var(--f-mono);font-style:normal;color:var(--surface);padding:0 8px;white-space:nowrap}
+.dscale{position:relative;height:18px;font:500 11px var(--f-mono);color:var(--muted)}
+.dscale span{position:absolute;transform:translateX(-50%);white-space:nowrap}
+.figs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.figs .card b{font:700 30px/1 var(--f-display);color:var(--green)}
+.seg2{display:flex;gap:6px}
+
+footer .wrap{padding-block:28px 40px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:14px;color:var(--muted)}
+
+@media (max-width:900px){
+  .hero .wrap,.two,.int-grid,.dgrid,.dsm{grid-template-columns:minmax(0,1fr)}
+  .dsm .in{border-right:0;border-bottom:1px solid var(--line)}
+  .sub{padding-block:40px}
+  .types{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .figs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .eq.merged .orb.i,.eq.merged .orb.d,.eq.merged .orb.a{transform:scale(.8);opacity:.35}
+  .eq.merged .orb.p{transform:scale(1.15)}
+}
+@media (max-width:560px){
+  .toc,.types,.cmp,.impact,.syms,.dlist{grid-template-columns:minmax(0,1fr)}
+  .meters{grid-template-columns:minmax(0,1fr)}
+  .stim{grid-template-columns:minmax(0,1fr) 84px}
+  .orb{width:96px;height:96px;font-size:13px}
+  .ch-head .wrap{grid-template-columns:minmax(0,1fr);gap:8px}
+}
+@media (prefers-reduced-motion:reduce){
+  .edge,.stim.new,.dots i.hit,.msg,.drow .lane i,.transcript .pt span{animation:none}
+  .track i,.orb,.op{transition:none}
+}
+</style>
+</head>
+<body>
+<div class="mtop"><div class="in"><a href="/"><div class="lg"><img src="data:image/webp;base64,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ZUlEeCx4bXA6aWlkOjc1YTk5NWRhLTUxOGItNDc0YS05Njg0LWViMTljYzI5OTE3OWxyZWxhdGlvbnNoaXBocGFyZW50T2YAAAHianVtYgAAAEFqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmFjdGlvbnMudjIAAAAAGGMyc2hMIo9lqq9mx/fsS8nfs+mnAAABmWNib3KiZ2FjdGlvbnOComZhY3Rpb25rYzJwYS5vcGVuZWRqcGFyYW1ldGVyc6FraW5ncmVkaWVudHOBomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCDWQz5RmTuGmX41GQymIv44K6MkGkJIFT7FgS+rxaPb9KRmYWN0aW9ueB1jb20uYW50aHJvcGljLmNsYXVkZS5wcm92aWRlZGpwYXJhbWV0ZXJzoXgfY29tLmFudGhyb3BpYy5vcmlnaW4tY29uZmlkZW5jZWd1bmtub3dua2Rlc2NyaXB0aW9ueGZDbGF1ZGUgcHJvdmlkZWQgdGhpcyBmaWxlIGF0IHRoZSByZXF1ZXN0IG9mIGEgdXNlciBhbmQgbWF5IGhhdmUgY3JlYXRlZCBvciBtb2RpZmllZCB0aGUgZmlsZSBjb250ZW50cy5tc29mdHdhcmVBZ2VudKFkbmFtZWZDbGF1ZGVyYWxsQWN0aW9uc0luY2x1ZGVk9QAAAMhqdW1iAAAAQGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaGFzaC5kYXRhAAAAABhjMnNoj6qbBcWQ0iILJyjhqFS5CwAAAIBjYm9ypWNhbGdmc2hhMjU2Y3BhZEwAAAAAAAAAAAAAAABkaGFzaFggfe2JEN1TlJJd+ri+enTuqI9Xi0dqdIDjnQCmzm9WEQ1kbmFtZW5qdW1iZiBtYW5pZmVzdGpleGNsdXNpb25zgaJlc3RhcnQZM5xmbGVuZ3RoGRaHAAACPmp1bWIAAAAnanVtZGMyY2wAEQAQgAAAqgA4m3EDYzJwYS5jbGFpbS52MgAAAAIPY2JvcqVjYWxnZnNoYTI1NmlzaWduYXR1cmV4TXNlbGYjanVtYmY9L2MycGEvdXJuOmMycGE6OThjYzI4OGYtN2MyZC00MjllLWIzMGUtYjJlMzA0MmIzODhjL2MycGEu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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9lhA2jMsuWKh5Jz64XBcNcH7bCv+orl1SLeFiBfCGVdT6QmlKHjQz/ur5D5GM5nlgbrjBbqP6V9/KEz83oD1Kty4OgA=" alt="MedON"></div><div class="t"><b>Trastornos del pensamiento y la sensopercepción</b><small>STUDENT · SEMIOLOGÍA PSIQUIÁTRICA</small></div></a></div></div>
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Student · Semiología psiquiátrica</p>
+      <h1>Trastornos del <em>pensamiento</em> y de la <em>sensopercepción</em></h1>
+      <p class="lede">Recorrido interactivo: conceptos, alucinaciones, delirios, psicosis, esquizofrenia y otros trastornos psicóticos. Cada sección tiene una animación o una herramienta interactiva.</p>
+    </div>
+    <ol class="toc">
+      <li><a href="#conceptos"><b>01</b><span>Pensamiento y sensopercepción<small>Conceptos · examen mental · tálamo</small></span></a></li>
+      <li><a href="#alteraciones"><b>02</b><span>Alteraciones de la sensopercepción<small>Ilusiones · 6 tipos de alucinación</small></span></a></li>
+      <li><a href="#delirio"><b>03</b><span>Alteraciones del pensamiento<small>Delirio · 11 tipos</small></span></a></li>
+      <li><a href="#psicosis"><b>04</b><span>Psicosis<small>Síndrome · impacto sobre la realidad</small></span></a></li>
+      <li><a href="#esquizofrenia"><b>05</b><span>Esquizofrenia<small>Fisiopatología · DSM-5 · tratamiento</small></span></a></li>
+      <li><a href="#otros"><b>06</b><span>Otros trastornos psicóticos<small>Esquizofreniforme · esquizoafectivo · breve · delirante · inducido</small></span></a></li>
+    </ol>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Capítulos">
+  <div class="wrap">
+    <a href="#conceptos"><b>01</b>Conceptos</a>
+    <a href="#alteraciones"><b>02</b>Sensopercepción</a>
+    <a href="#delirio"><b>03</b>Delirio</a>
+    <a href="#psicosis"><b>04</b>Psicosis</a>
+    <a href="#esquizofrenia"><b>05</b>Esquizofrenia</a>
+    <a href="#otros"><b>06</b>Otros trastornos</a>
+  </div>
+</nav>
+
+<main>
+<!-- ================= 01 ================= -->
+<section id="conceptos" data-ch>
+  <div class="ch-head"><div class="wrap"><span class="num">01</span><div><h2>Pensamiento y sensopercepción</h2><p>Conceptos básicos · Neuroanatomía</p></div></div></div>
+
+  <div class="sub"><div class="wrap two">
+    <div class="text">
+      <p class="eyebrow">Pensamiento</p>
+      <h2>¿Qué es el pensamiento?</h2>
+      <p class="big">Proceso cognitivo mediante el cual el cerebro <strong>organiza</strong>, <strong>analiza</strong> y <strong>comprende</strong> la información.</p>
+      <ul class="ticks"><li>Razonar y reflexionar</li><li>Resolver y decidir</li><li>Crear y procesar emociones</li></ul>
+      <p class="note">Toca cada tipo de pensamiento para ver sus características.</p>
+    </div>
+    <div class="types" id="types"></div>
+  </div></div>
+
+  <div class="sub"><div class="wrap one">
+    <div class="text">
+      <p class="eyebrow">Examen mental</p>
+      <h2>¿Cómo evaluamos el pensamiento de un individuo?</h2>
+    </div>
+    <div class="tbl"><table>
+      <thead><tr><th>Dimensión</th><th>Qué evaluamos</th><th>Alteraciones principales</th></tr></thead>
+      <tbody>
+        <tr><td>Curso</td><td>Velocidad y continuidad del pensamiento</td><td>Taquipsiquia, bradipsiquia, fuga de ideas y bloqueo</td></tr>
+        <tr><td>Forma</td><td>Organización, coherencia y conexión entre ideas</td><td>Circunstancialidad, tangencialidad, descarrilamiento e incoherencia</td></tr>
+        <tr><td>Contenido</td><td>Ideas, creencias y preocupaciones predominantes</td><td>Delirios, obsesiones, ideas sobrevaloradas e ideación suicida</td></tr>
+      </tbody>
+    </table></div>
+  </div></div>
+
+  <div class="sub" id="curso-forma"><div class="wrap two">
+    <div class="text">
+      <p class="eyebrow">Curso y forma</p>
+      <h2>El camino de la <span class="hl">pregunta a la respuesta</span></h2>
+      <p>El pensamiento normal va de la pregunta a la respuesta a una velocidad adecuada. Las alteraciones del <strong>curso</strong> cambian la velocidad o la continuidad del camino. Las de la <strong>forma</strong> cambian su organización: el paciente da rodeos, se desvía o pierde la conexión entre ideas.</p>
+      <div class="grp"><span>Curso</span><div class="btns" id="thCurso"></div></div>
+      <div class="grp"><span>Forma</span><div class="btns" id="thForma"></div></div>
+      <div class="card" id="thDef"></div>
+    </div>
+    <div class="lab">
+      <div class="bar"><b id="thName">Pensamiento normal</b><span id="thSpeed">velocidad normal</span></div>
+      <canvas id="cvThought" style="height:270px" aria-label="Trayectoria del pensamiento desde la pregunta hasta la respuesta"></canvas>
+      <div class="transcript"><span class="who">Médico</span><span>¿Por qué vino hoy al hospital?</span><span class="who">Paciente</span><span class="pt" id="thTxt"></span></div>
+    </div>
+  </div></div>
+
+  <div class="sub"><div class="wrap one">
+    <div class="text">
+      <p class="eyebrow">Contenido del pensamiento</p>
+      <h2>Ideas, creencias y preocupaciones predominantes</h2>
+    </div>
+    <div class="cards">
+      <div class="card"><span class="k">Delirios</span><h3>Creencia falsa e inamovible</h3><p>No cambia aunque se presenten pruebas en contra. Se estudia en el capítulo 03.</p><a href="#delirio">Ver delirios →</a></div>
+      <div class="card"><span class="k">Obsesiones</span><h3>Pensamientos intrusivos</h3><p>Ideas o imágenes recurrentes que el paciente reconoce como propias y absurdas. Le generan ansiedad y trata de resistirlas.</p></div>
+      <div class="card"><span class="k">Ideas sobrevaloradas</span><h3>Creencia con carga afectiva excesiva</h3><p>Es comprensible y no tan rígida como un delirio, pero domina la vida del paciente.</p></div>
+      <div class="card"><span class="k">Ideación suicida</span><h3>Pensamientos sobre la propia muerte</h3><p>Siempre se pregunta de forma directa: frecuencia, plan, intención y acceso a medios.</p></div>
+    </div>
+  </div></div>
+
+  <div class="sub"><div class="wrap two">
+    <div class="text">
+      <p class="eyebrow">Sensopercepción</p>
+      <h2>¿Qué es la sensopercepción?</h2>
+      <p class="big">Proceso mediante el cual el cerebro <strong>recibe</strong>, <strong>interpreta</strong> y <strong>da significado</strong> a los estímulos sensoriales del entorno y del propio cuerpo.</p>
+      <div class="cards">
+        <div class="card"><span class="k">Visual</span><p>Interpretación de la luz y los colores.</p></div>
+        <div class="card"><span class="k">Auditiva</span><p>Procesamiento de los sonidos y su significado.</p></div>
+        <div class="card"><span class="k">Táctil</span><p>Texturas, temperatura y presión.</p></div>
+        <div class="card"><span class="k">Olfativa y gustativa</span><p>Interpretación de olores y sabores.</p></div>
+        <div class="card"><span class="k">Propioceptiva</span><p>Posición del cuerpo en el espacio.</p></div>
+      </div>
+    </div>
+    <div class="lab">
+      <div class="bar"><b>El tálamo: estación de relevo sensorial</b><span id="thalAuto">recorrido automático</span></div>
+      <canvas id="cvThal" style="height:360px" aria-label="Vías sensoriales desde los sentidos al tálamo y a la corteza"></canvas>
+      <div class="ctrl"><div class="senses" id="senses"></div></div>
+      <div class="panel" id="thalDet"></div>
+    </div>
+  </div></div>
+</section>
+
+<!-- ================= 02 ================= -->
+<section id="alteraciones" data-ch>
+  <div class="ch-head"><div class="wrap"><span class="num">02</span><div><h2>Alteraciones de la sensopercepción</h2><p>Ilusiones · Alucinaciones</p></div></div></div>
+
+  <div class="sub"><div class="wrap two">
+    <div class="text">
+      <p class="eyebrow">Sensopercepción</p>
+      <h2>Ilusión o alucinación: <span class="hl">¿hay un estímulo real?</span></h2>
+      <div class="cmp">
+        <div class="card"><span class="k">Ilusiones</span><h3>Distorsión de un estímulo real</h3><p>Ejemplo: ver una sombra y creer que es una persona.</p></div>
+        <div class="card"><span class="k">Alucinaciones</span><h3>Percepción sin un estímulo real</h3><p>Ejemplo: escuchar voces que no existen.</p></div>
+      </div>
+      <p class="note">La pregunta clave en la entrevista es si existe algo real que el paciente esté malinterpretando.</p>
+    </div>
+    <div class="lab">
+      <div class="bar"><b>Mundo real frente a lo que se percibe</b><span>animación</span></div>
+      <canvas id="cvIA" style="height:360px" aria-label="Comparación animada entre una ilusión y una alucinación"></canvas>
+    </div>
+  </div></div>
+
+  <div class="sub"><div class="wrap two">
+    <div class="text">
+      <p class="eyebrow">Tipos de alucinaciones · <span id="halN">01</span> / 06</p>
+      <h2 id="halTitle">Alucinaciones visuales</h2>
+      <p class="big" id="halDef"></p>
+      <ul class="ticks" id="halList"></ul>
+      <div class="btns" id="halBtns"></div>
+    </div>
+    <div class="lab">
+      <div class="bar"><b id="halBar">Visual</b><span>animación</span></div>
+      <canvas id="cvHal" style="height:340px" aria-label="Animación del tipo de alucinación seleccionado"></canvas>
+    </div>
+  </div></div>
+</section>
+
+<!-- ================= 03 ================= -->
+<section id="delirio" data-ch>
+  <div class="ch-head"><div class="wrap"><span class="num">03</span><div><h2>Alteraciones del pensamiento</h2><p>Delirio · Tipos de delirio</p></div></div></div>
+
+  <div class="sub"><div class="wrap two">
+    <div class="text">
+      <p class="eyebrow">Delirio</p>
+      <h2>¿Qué es el delirio?</h2>
+      <p class="big">Creencia falsa e inamovible que <strong>no cambia aunque se presenten pruebas en contra</strong>.</p>
+      <div class="cards">
+        <div class="card"><span class="k">Origen</span><p>No surge de la percepción sensorial, sino de un pensamiento alterado.</p></div>
+        <div class="card"><span class="k">Ejemplo</span><p>Cree firmemente que el gobierno lo persigue, sin evidencia real.</p></div>
+      </div>
+      <p class="note">Presenta evidencia en contra y compara cómo responde cada tipo de creencia. Solo el delirio no cede: reinterpreta la prueba para confirmarse.</p>
+    </div>
+    <div class="lab">
+      <div class="bar"><b>Prueba de irreductibilidad</b><span id="bfStep">evidencia 0 de 3</span></div>
+      <div class="ctrl" style="border-top:0">
+        <div class="btns" id="bfType">
+          <button class="btn" data-b="comun">Creencia común</button>
+          <button class="btn" data-b="sobre">Idea sobrevalorada</button>
+          <button class="btn" data-b="delirio" aria-pressed="true">Delirio</button>
+        </div>
+      </div>
+      <div class="belief">
+        <div class="convic"><span>Convicción</span><div class="track"><i id="bfBar" style="background:var(--da)"></i></div><b id="bfVal">100%</b></div>
+        <div class="chat" id="bfChat"></div>
+        <div class="btns"><button class="btn primary" id="bfNext">Presentar evidencia en contra</button><button class="btn" id="bfReset">Reiniciar</button></div>
+      </div>
+    </div>
+  </div></div>
+
+  <div class="sub"><div class="wrap one">
+    <div class="text">
+      <p class="eyebrow">Tipos de delirio · 11</p>
+      <h2>Elige un tipo de delirio</h2>
+    </div>
+    <div class="dgrid">
+      <div class="dlist" id="dlist"></div>
+      <div class="ddet" id="ddet" aria-live="polite"></div>
+    </div>
+  </div></div>
+</section>
+
+<!-- ================= 04 ================= -->
+<section id="psicosis" data-ch>
+  <div class="ch-head"><div class="wrap"><span class="num">04</span><div><h2>Psicosis</h2><p>Síndrome · Impacto sobre la realidad</p></div></div></div>
+  <div class="sub"><div class="wrap one">
+    <div class="text">
+      <p class="eyebrow">Psicosis</p>
+      <h2>Un síndrome donde convergen tres fenómenos</h2>
+    </div>
+    <div class="eq" id="eq">
+      <div class="orb i">Ilusiones</div><span class="op">+</span>
+      <div class="orb a">Alucinaciones</div><span class="op">+</span>
+      <div class="orb d">Delirios</div><span class="op">=</span>
+      <div class="orb p">Psicosis</div>
+    </div>
+    <div class="btns"><button class="btn primary" id="eqBtn">Combinar los tres fenómenos</button></div>
+    <div class="text"><p class="eyebrow">Impacto sobre la realidad y la conducta</p><p>Estos fenómenos alteran:</p></div>
+    <div class="impact">
+      <div class="card"><b>1</b><h3>La percepción de la realidad</h3><p>Ilusiones y alucinaciones cambian lo que el paciente percibe.</p></div>
+      <div class="card"><b>2</b><h3>El juicio</h3><p>Los delirios impiden evaluar la realidad con las pruebas disponibles.</p></div>
+      <div class="card"><b>3</b><h3>La conducta</h3><p>El paciente actúa según lo que percibe y cree: se defiende, huye u obedece las voces.</p></div>
+    </div>
+  </div></div>
+</section>
+
+<!-- ================= 05 ================= -->
+<section id="esquizofrenia" data-ch>
+  <div class="ch-head"><div class="wrap"><span class="num">05</span><div><h2>Esquizofrenia</h2><p>Fisiopatología · Epidemiología · Diagnóstico · Tratamiento</p></div></div></div>
+
+  <div class="sub"><div class="wrap two">
+    <div class="text">
+      <p class="eyebrow">Trastornos psicóticos</p>
+      <h2>Esquizofrenia</h2>
+      <p class="big">Trastorno psicótico crónico y grave que afecta la <strong>sensopercepción</strong>, el <strong>pensamiento</strong> y la <strong>conducta</strong>.</p>
+      <p>Diagnóstico: síntomas característicos que persisten al menos <strong>6 meses</strong> e interfieren con el funcionamiento social y laboral.</p>
+    </div>
+    <div class="text">
+      <p class="eyebrow">Fisiopatología · mapa</p>
+      <h3 style="font-size:22px">Un trastorno del neurodesarrollo</h3>
+      <p>Circuitos cerebrales mal conectados y mal regulados.</p>
+      <ol class="steps"><li><a href="#neurodesarrollo">Vulnerabilidad del desarrollo</a></li><li><a href="#glutamato">Desequilibrio excitación / inhibición</a></li><li><a href="#dopamina">Desregulación dopaminérgica</a></li></ol>
+      <p>Alteran la interpretación de la realidad, la organización del pensamiento, la motivación y la cognición.</p>
+      <p class="note">No existe un mecanismo único que explique todos los casos. Fuente: NIMH.</p>
+    </div>
+  </div></div>
+
+  <div class="sub" style="padding-block:28px"><div class="wrap">
+    <div class="scen" role="group" aria-label="Escenarios clínicos de la fisiopatología">
+      <label>Escenario</label>
+      <button class="chip" data-p="tipico">Cerebro típico</button>
+      <button class="chip" data-p="prodromo">Pródromo</button>
+      <button class="chip" data-p="episodio">Primer episodio psicótico</button>
+      <button class="chip" data-p="tratado">Con antipsicótico</button>
+      <button class="chip" data-p="ketamina">Modelo con ketamina</button>
+      <span class="custom" id="customLbl" hidden>Ajuste personalizado</span>
+    </div>
+  </div></div>
+
+  <div class="sub" id="neurodesarrollo"><div class="wrap two">
+    <div class="text">
+      <p class="eyebrow">Fisiopatología · 1 / 3</p>
+      <h2>Vulnerabilidad genética y del <span class="hl">neurodesarrollo</span></h2>
+      <p>En la infancia el cerebro forma sinapsis en exceso. En la adolescencia la <strong>poda sináptica</strong> elimina las conexiones más débiles. Si se suman <strong>múltiples variantes genéticas</strong> y <strong>factores ambientales</strong>, la poda puede ser excesiva y la conectividad queda por debajo de lo necesario.</p>
+      <ol class="steps">
+        <li>Variantes genéticas de riesgo, cada una con efecto pequeño</li>
+        <li>Ambiente: complicaciones obstétricas, infección prenatal, cannabis en la adolescencia, estrés crónico</li>
+        <li>Maduración sináptica y conectividad alteradas</li>
+        <li>Años después aparecen los síntomas clínicos</li>
+      </ol>
+      <p class="note">No existe un único “gen de la esquizofrenia”. Prueba activar solo uno de los dos factores: la conectividad baja, pero puede no cruzar el umbral. Así se ve la vulnerabilidad sin enfermedad.</p>
+    </div>
+    <div class="lab">
+      <div class="bar"><b>Red cortical</b><span id="phase">Poda adolescente</span></div>
+      <div class="guide" id="g1"></div>
+      <canvas id="cvNet" style="height:250px" aria-label="Red de neuronas cuyas sinapsis se forman y se podan según la edad"></canvas>
+      <div class="key"><span><i class="dot" style="background:var(--ink)"></i>Neurona</span><span><i style="background:var(--green)"></i>Sinapsis activa</span><span><i style="background:var(--muted)"></i>Sinapsis que se poda</span><span><i class="dot" style="background:var(--glu)"></i>Señal</span><span><i class="dot" style="background:var(--muted);opacity:.5"></i>Neurona aislada</span><span><i style="background:var(--alert)"></i>Red bajo el umbral</span></div>
+      <canvas id="cvCurve" style="height:190px;border-top:1px solid var(--line)" aria-label="Curva de densidad sináptica según la edad"></canvas>
+      <div class="key"><span><i class="dash" style="color:var(--muted)"></i>Desarrollo típico</span><span><i style="background:var(--green)"></i>Con factores de riesgo</span><span><i class="dash" style="color:var(--alert)"></i>Umbral de conectividad</span><span><i style="background:var(--glu);opacity:.35;height:10px"></i>Inicio típico en hombres</span><span><i style="background:var(--gaba);opacity:.35;height:10px"></i>Inicio típico en mujeres</span></div>
+      <div class="ctrl">
+        <div class="row">
+          <div class="lbl"><label for="age">Edad</label><output id="ageOut">21 años</output></div>
+          <input type="range" id="age" min="0" max="30" step="0.1" value="21">
+        </div>
+        <div class="toggles">
+          <label><input type="checkbox" id="gen" checked> Variantes genéticas de riesgo</label>
+          <label><input type="checkbox" id="env" checked> Factores ambientales</label>
+        </div>
+        <div class="btns"><button class="btn primary" id="play">▶ Reproducir de 0 a 30 años</button></div>
+      </div>
+      <div class="meters">
+        <div class="meter"><span>Densidad sináptica</span><b id="mDen">—</b><div class="track"><i id="tDen" style="background:var(--green)"></i></div></div>
+        <div class="meter"><span>Conexiones podadas desde el pico</span><b id="mPrune">—</b><div class="track"><i id="tPrune" style="background:var(--glu)"></i></div></div>
+        <div class="meter"><span>Estado</span><b><span class="pill" id="mState">—</span></b></div>
+      </div>
+    </div>
+  </div></div>
+
+  <div class="sub" id="glutamato"><div class="wrap two">
+    <div class="text">
+      <p class="eyebrow">Fisiopatología · 2 / 3</p>
+      <h2>Glutamato y GABA: <span class="hl">el freno falla</span></h2>
+      <p>Las interneuronas GABA necesitan receptores <strong>NMDA</strong> funcionales para activarse. Si esos receptores funcionan menos, la interneurona no frena a la neurona piramidal. La paradoja: <strong>menos excitación, más actividad</strong>.</p>
+      <ol class="steps">
+        <li>NMDA: el receptor excitador funciona menos</li>
+        <li>GABA: no activa a la neurona que frena</li>
+        <li>↑ Desinhibición de neuronas excitadoras: el circuito se acelera</li>
+        <li>Actividad cerebral descoordinada: se pierde la oscilación gamma</li>
+      </ol>
+      <div class="legend"><span><i style="background:var(--glu)"></i>Glutamato (excitador)</span><span><i style="background:var(--gaba)"></i>GABA (inhibidor)</span></div>
+      <p class="note">La ketamina bloquea el receptor NMDA y produce en voluntarios sanos síntomas parecidos a la psicosis. Es un modelo fisiopatológico, no una secuencia demostrada en todos los pacientes.</p>
+    </div>
+    <div class="lab">
+      <div class="bar"><b>Microcircuito cortical</b><span>cámara lenta</span></div>
+      <div class="guide" id="g2"></div>
+      <canvas id="cvCirc" style="height:380px" aria-label="Microcircuito con aferencia glutamatérgica, interneurona GABA y neurona piramidal"></canvas>
+      <div class="key"><span><i class="dot" style="border:2px solid var(--glu);background:transparent"></i>Aferencia</span><span><i class="dot" style="background:var(--gaba)"></i>Interneurona GABA</span><span><i class="tri"></i>Piramidal</span><span><i class="dot" style="background:var(--glu)"></i>Espiga excitadora</span><span><i class="dot" style="background:var(--gaba)"></i>Espiga inhibidora</span><span><i class="ring"></i>Disparo frenado</span><span><i style="background:var(--green)"></i>Gamma rítmica</span><span><i style="background:var(--alert)"></i>Actividad desordenada</span></div>
+      <div class="ctrl">
+        <div class="row">
+          <div class="lbl"><label for="nmda">Función del receptor NMDA en interneuronas</label><output id="nmdaOut">45%</output></div>
+          <input type="range" id="nmda" min="0.15" max="1" step="0.01" value="0.45">
+        </div>
+        <div class="btns">
+          <button class="btn" id="btnKet">Simular ketamina (antagonista NMDA)</button>
+          <button class="btn" id="btnNmdaReset">Función normal</button>
+        </div>
+      </div>
+      <div class="meters">
+        <div class="meter"><span>Freno GABA</span><b id="mGaba">—</b><div class="track"><i id="tGaba" style="background:var(--gaba)"></i></div></div>
+        <div class="meter"><span>Actividad piramidal</span><b id="mPyr">—</b><div class="track"><i id="tPyr" style="background:var(--glu)"></i></div></div>
+        <div class="meter"><span>Sincronía gamma</span><b id="mSync">—</b><div class="track"><i id="tSync" style="background:var(--green)"></i></div></div>
+      </div>
+    </div>
+  </div></div>
+
+  <div class="sub" id="dopamina"><div class="wrap two">
+    <div class="text">
+      <p class="eyebrow">Fisiopatología · 3 / 3</p>
+      <h2><span class="hl">Dopamina</span> y saliencia aberrante</h2>
+      <p>El hallazgo dopaminérgico más consistente en la esquizofrenia: <strong>↑ síntesis y liberación presináptica de dopamina</strong> en las regiones asociativas del estriado. En exceso, la dopamina da <strong>importancia excesiva a estímulos irrelevantes</strong>, y el paciente construye explicaciones delirantes para esa importancia.</p>
+      <ol class="steps">
+        <li>↑ Síntesis y liberación presináptica</li>
+        <li>Estriado asociativo: más señal sobre receptores D2</li>
+        <li>Saliencia aberrante de estímulos neutros</li>
+        <li>Ideas de referencia y delirios persecutorios</li>
+      </ol>
+      <div class="legend"><span><i style="background:var(--da)"></i>Dopamina</span><span><i style="background:var(--drug)"></i>Antipsicótico bloqueando D2</span></div>
+      <p class="note">La ocupación terapéutica de D2 suele estar entre 65 y 80%. Por encima de 80% aumenta el riesgo de síntomas extrapiramidales y de hiperprolactinemia.</p>
+    </div>
+    <div class="lab">
+      <div class="bar"><b>Sinapsis dopaminérgica estriatal</b><span id="d2Lbl">sin antipsicótico</span></div>
+      <canvas id="cvSyn" style="height:280px" aria-label="Sinapsis con liberación de dopamina hacia receptores D2"></canvas>
+      <div class="ctrl">
+        <div class="row">
+          <div class="lbl"><label for="da">Síntesis y liberación presináptica</label><output id="daOut">90%</output></div>
+          <input type="range" id="da" min="0.1" max="1" step="0.01" value="0.9">
+        </div>
+        <div class="row">
+          <div class="lbl"><label for="occ">Antipsicótico: ocupación de receptores D2</label><output id="occOut">0%</output></div>
+          <input type="range" id="occ" min="0" max="0.9" step="0.01" value="0">
+          <small id="occNote">Ventana terapéutica: 65–80%</small>
+        </div>
+      </div>
+      <div class="meters">
+        <div class="meter"><span>Señal D2 postsináptica</span><b id="mD2">—</b><div class="track"><i id="tD2" style="background:var(--da)"></i></div></div>
+        <div class="meter"><span>Receptores D2 bloqueados</span><b id="mBlk">—</b><div class="track"><i id="tBlk" style="background:var(--drug)"></i></div></div>
+        <div class="meter"><span>Filtro de saliencia</span><b><span class="pill" id="mSal">—</span></b></div>
+      </div>
+      <div class="feed" aria-live="polite">
+        <h3>Estímulos del entorno · importancia asignada</h3>
+        <div id="feed"></div>
+      </div>
+    </div>
+  </div></div>
+
+  <div class="sub" id="integracion"><div class="wrap one">
+    <div class="text">
+      <p class="eyebrow">Integración clínica</p>
+      <h2>Del mecanismo al <span class="hl">síntoma</span></h2>
+      <p>Cambia de escenario arriba o mueve cualquier control de los tres módulos.</p>
+    </div>
+    <div class="int-grid">
+      <div class="diagram"><svg id="dg" viewBox="0 0 760 330" role="img" aria-label="Diagrama de flujo de los mecanismos a los síntomas"></svg></div>
+      <div class="symp">
+        <div class="sc"><div class="hd"><h3>Síntomas positivos</h3><b id="sPos">—</b></div><div class="track"><i id="tPos" style="background:var(--da)"></i></div><p>Delirios · alucinaciones · pensamiento y conducta desorganizados</p></div>
+        <div class="sc"><div class="hd"><h3>Síntomas negativos</h3><b id="sNeg">—</b></div><div class="track"><i id="tNeg" style="background:var(--glu)"></i></div><p>Afecto aplanado · alogia · abulia · anhedonia · asocialidad</p></div>
+        <div class="sc"><div class="hd"><h3>Síntomas cognitivos</h3><b id="sCog">—</b></div><div class="track"><i id="tCog" style="background:var(--gaba)"></i></div><p>Funciones ejecutivas · atención y memoria de trabajo · toma de decisiones</p></div>
+      </div>
+    </div>
+    <div class="reading" id="reading"></div>
+  </div></div>
+
+  <div class="sub"><div class="wrap two">
+    <div class="text">
+      <p class="eyebrow">Epidemiología</p>
+      <h2>~1% de la población mundial</h2>
+      <p class="big">1 de cada 100 personas.</p>
+      <p><strong>Genética + ambiente → sin causa única.</strong></p>
+      <div class="card" style="margin-top:8px">
+        <span class="k">Prevalencia en Colombia</span>
+        <span class="stat">+500.000</span>
+        <p>personas con esquizofrenia en el país (estimado). Prevalencia similar a la mundial. Según el Ministerio de Salud, los trastornos psicóticos son una parte importante de la carga de enfermedad mental; muchos casos no se diagnostican ni se tratan adecuadamente.</p>
+      </div>
+    </div>
+    <div class="lab">
+      <div class="bar"><b>100 personas</b><span>1 con esquizofrenia</span></div>
+      <div class="dots" id="dots" aria-label="Cien puntos, uno resaltado"></div>
+      <div class="onset">
+        <span class="eyebrow" style="color:var(--muted)">Edad de inicio (años)</span>
+        <div class="oline"><span>Hombres</span><div class="oscale"><i style="left:12.5%;width:25%;background:var(--glu)"></i></div></div>
+        <div class="oline"><span>Mujeres</span><div class="oscale"><i style="left:37.5%;width:25%;background:var(--gaba)"></i></div></div>
+        <div class="oticks"><span></span><div><span>10</span><span>20</span><span>30</span><span>40</span><span>50</span></div></div>
+        <p class="note">Hombres 15–25 años · Mujeres 25–35 años.</p>
+      </div>
+    </div>
+  </div></div>
+
+  <div class="sub" id="dsm"><div class="wrap one">
+    <div class="text">
+      <p class="eyebrow">Esquizofrenia · DSM-5</p>
+      <h2>Criterios diagnósticos: <span class="hl">arma el caso</span></h2>
+      <p>Marca los síntomas, la duración y el contexto del paciente. La herramienta aplica los criterios A, B y C y muestra cómo cambia el diagnóstico según la duración: psicótico breve, esquizofreniforme o esquizofrenia.</p>
+    </div>
+    <div class="lab dsm">
+      <div class="in">
+        <div class="grp"><span>Criterio A · síntomas (al menos dos, 1 mes o más)</span>
+          <div class="toggles" style="display:grid;gap:8px">
+            <label><input type="checkbox" id="sx0" checked> Delirios · creencias falsas irreductibles a la argumentación lógica</label>
+            <label><input type="checkbox" id="sx1" checked> Alucinaciones · experiencias sensoriales sin estímulo externo</label>
+            <label><input type="checkbox" id="sx2"> Discurso desorganizado · incoherencia, asociaciones laxas o tangencialidad</label>
+            <label><input type="checkbox" id="sx3"> Conducta desorganizada o catatónica · movimientos erráticos, agitación o inmovilidad</label>
+            <label><input type="checkbox" id="sx4"> Síntomas negativos · afecto aplanado, anhedonia, abulia, alogia</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="lbl"><label for="dur">Duración total del cuadro</label><output id="durOut">8 meses</output></div>
+          <input type="range" id="dur" min="0" max="15" step="1" value="12">
+        </div>
+        <div class="grp"><span>Criterio B y exclusiones</span>
+          <div class="toggles" style="display:grid;gap:8px">
+            <label><input type="checkbox" id="fx" checked> Disfunción social u ocupacional (trabajo, relaciones, autocuidado)</label>
+            <label><input type="checkbox" id="mood"> Episodio depresivo o maníaco durante la psicosis</label>
+            <label><input type="checkbox" id="subs"> Relación con sustancias, abstinencia o medicamentos</label>
+            <label><input type="checkbox" id="stress"> Desencadenante: trauma o estrés extremo</label>
+          </div>
+        </div>
+      </div>
+      <div class="out" aria-live="polite">
+        <div class="crit" id="crit"></div>
+        <div class="tl" id="tl"></div>
+        <div class="dx" id="dx"></div>
+      </div>
+    </div>
+  </div></div>
+
+  <div class="sub"><div class="wrap two">
+    <div class="text">
+      <p class="eyebrow">Esquizofrenia</p>
+      <h2>Tipos de esquizofrenia</h2>
+      <p>Ya no se usan en el DSM-5, pero ayudan a entender la variabilidad del trastorno.</p>
+      <div>
+        <details open><summary><b>1</b>Paranoide</summary><p>Delirios y alucinaciones predominantes.</p></details>
+        <details><summary><b>2</b>Hebefrénica</summary><p>Pensamiento y comportamiento desorganizados.</p></details>
+        <details><summary><b>3</b>Catatónica</summary><p>Alteraciones motoras extremas.</p></details>
+        <details><summary><b>4</b>Indiferenciada</summary><p>Mezcla de síntomas sin patrón claro.</p></details>
+        <details><summary><b>5</b>Residual</summary><p>Síntomas leves tras un episodio agudo.</p></details>
+      </div>
+    </div>
+    <div class="lab">
+      <div class="bar"><b>Catatonía en la esquizofrenia</b><span id="catLbl">inmovilidad extrema</span></div>
+      <canvas id="cvCat" style="height:280px" aria-label="Figura que muestra inmovilidad o agitación catatónica"></canvas>
+      <div class="ctrl">
+        <p style="font-size:15px;color:var(--muted)">Síndrome psicomotor con anomalías en el <strong style="color:var(--ink)">movimiento</strong>, el <strong style="color:var(--ink)">tono muscular</strong> y la <strong style="color:var(--ink)">conducta motora</strong>.</p>
+        <div class="btns"><button class="btn" id="catI" aria-pressed="true">Inmovilidad extrema</button><button class="btn" id="catA">Agitación sin propósito</button></div>
+      </div>
+    </div>
+  </div></div>
+
+  <div class="sub"><div class="wrap one">
+    <div class="text"><p class="eyebrow">Esquizofrenia</p><h2>Tipos de síntomas</h2></div>
+    <div class="syms">
+      <div class="card"><span class="k" style="color:var(--da)">Positivos · exceso o distorsión</span><ul><li>Delirios</li><li>Alucinaciones, sobre todo auditivas</li><li>Pensamiento desorganizado</li><li>Conducta desorganizada o catatónica</li></ul></div>
+      <div class="card"><span class="k" style="color:var(--glu)">Negativos · déficit de funciones</span><ul><li>Afecto aplanado</li><li>Alogia: discurso empobrecido</li><li>Abulia: falta de motivación</li><li>Anhedonia: sin placer</li><li>Asocialidad</li></ul></div>
+      <div class="card"><span class="k" style="color:var(--gaba)">Cognitivos</span><ul><li>Funciones ejecutivas</li><li>Atención y memoria de trabajo</li><li>Toma de decisiones</li></ul></div>
+    </div>
+  </div></div>
+
+  <div class="sub"><div class="wrap">
+    <div class="text">
+      <p class="eyebrow">Esquizofrenia</p>
+      <h2>Tratamiento farmacológico</h2>
+      <div class="cmp">
+        <div class="card"><span class="k">Primera generación</span><h3>Antipsicóticos típicos</h3><p>Haloperidol, clorpromazina.</p></div>
+        <div class="card"><span class="k">Segunda generación</span><h3>Antipsicóticos atípicos</h3><p>Risperidona, quetiapina, olanzapina; clozapina en casos resistentes.</p></div>
+      </div>
+      <p class="note">Ambos grupos bloquean receptores D2. Mira el efecto en el <a href="#dopamina">módulo de dopamina</a>.</p>
+    </div>
+  </div></div>
+</section>
+
+<!-- ================= 06 ================= -->
+<section id="otros" data-ch>
+  <div class="ch-head"><div class="wrap"><span class="num">06</span><div><h2>Otros trastornos psicóticos</h2><p>Esquizofreniforme · Esquizoafectivo · Breve · Delirante · Inducido</p></div></div></div>
+
+  <div class="sub"><div class="wrap one">
+    <div class="text"><p class="eyebrow">Comparación</p><h2>La duración define el diagnóstico</h2></div>
+    <div class="dur" id="durChart"></div>
+  </div></div>
+
+  <div class="sub"><div class="wrap two">
+    <div class="text">
+      <p class="eyebrow">Trastornos psicóticos</p>
+      <h2>Trastorno esquizofreniforme</h2>
+      <p class="big">Comparte muchas características con la <strong>esquizofrenia</strong>, pero con una <strong>duración más corta</strong>.</p>
+      <div class="cmp"><div class="card"><span class="k">Diagnóstico transitorio · algunos pacientes</span><p>Evolucionan a esquizofrenia.</p></div><div class="card"><span class="k">Otros</span><p>Se recuperan sin recaídas.</p></div></div>
+    </div>
+    <div class="text">
+      <p class="eyebrow">Criterios diagnósticos (DSM-5)</p>
+      <div class="crit" style="gap:12px">
+        <div class="met"><b>A</b><span><strong>≥ 2 síntomas durante ≥ 1 mes.</strong> Delirios · alucinaciones · discurso desorganizado · conducta desorganizada o catatónica · síntomas negativos. Uno debe ser delirios, alucinaciones o discurso desorganizado.</span></div>
+        <div class="met"><b>B</b><span><strong>Entre 1 y 6 meses.</strong> Si persiste más de 6 meses, el diagnóstico cambia a esquizofrenia.</span></div>
+        <div class="met"><b>C</b><span><strong>Exclusión.</strong> Descartar trastorno esquizoafectivo, bipolar, depresión con psicosis y consumo de sustancias.</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:24px"><div class="figs">
+    <div class="card"><b>0,2–0,7%</b><p>de la población general; menor que la esquizofrenia.</p></div>
+    <div class="card"><b>5–20%</b><p>de los primeros episodios psicóticos.</p></div>
+    <div class="card"><b>15–30</b><p>años: más frecuente en adolescentes y adultos jóvenes.</p></div>
+    <div class="card"><b>Hombres ≈ mujeres</b><p>Sin diferencias por sexo; inicio más temprano en hombres.</p></div>
+  </div></div></div>
+
+  <div class="sub"><div class="wrap two">
+    <div class="text">
+      <p class="eyebrow">Trastornos psicóticos</p>
+      <h2>Trastorno esquizoafectivo</h2>
+      <p class="big"><strong>Síntomas de esquizofrenia + trastorno del ánimo.</strong></p>
+      <p>Delirios, alucinaciones o pensamiento desorganizado junto con <strong>depresión</strong> o <strong>manía</strong>. Diagnóstico intermedio entre la esquizofrenia y los trastornos afectivos.</p>
+    </div>
+    <div class="lab">
+      <div class="bar"><b>Subtipos</b><span id="eaLbl">tipo depresivo</span></div>
+      <canvas id="cvEA" style="height:200px" aria-label="Curso del ánimo y de la psicosis en el trastorno esquizoafectivo"></canvas>
+      <div class="ctrl">
+        <div class="btns"><button class="btn" id="eaD" aria-pressed="true">Tipo depresivo</button><button class="btn" id="eaB">Tipo bipolar</button></div>
+        <div id="eaTxt" style="font-size:15.5px"></div>
+      </div>
+    </div>
+  </div></div>
+
+  <div class="sub"><div class="wrap one">
+    <div class="cards">
+      <div class="card" style="border-top:3px solid var(--glu)"><span class="k">Trastornos psicóticos</span><h3>Trastorno psicótico breve</h3><p>Síntomas psicóticos <strong>súbitos y transitorios</strong>, generalmente tras un evento estresante.</p>
+        <ul class="ticks" style="font-size:15px"><li><strong>Síntomas:</strong> delirios, alucinaciones, desorganización.</li><li><strong>Duración:</strong> entre 1 día y 1 mes.</li><li><strong>Evolución:</strong> recuperación completa tras el episodio.</li><li><strong>Desencadenante:</strong> trauma o estrés extremo.</li><li><strong>Tratamiento:</strong> antipsicóticos a corto plazo y apoyo psicoterapéutico.</li></ul></div>
+      <div class="card" style="border-top:3px solid var(--da)"><span class="k">Trastornos psicóticos</span><h3>Trastorno delirante</h3><p>Delirios <strong>fijos y sistematizados</strong> durante al menos 1 mes, sin otros síntomas psicóticos prominentes.</p>
+        <ul class="ticks" style="font-size:15px"><li><strong>Persecutorio:</strong> alguien lo vigila o daña.</li><li><strong>Celotípico:</strong> infidelidad de la pareja.</li><li><strong>Grandiosidad:</strong> talentos excepcionales o figura importante.</li><li><strong>Erotomaníaco:</strong> alguien famoso está enamorado de él.</li><li><strong>Somático:</strong> enfermedad grave o defecto físico.</li></ul>
+        <p class="note">Sin deterioro funcional grave · antipsicóticos y terapia cognitivo-conductual.</p></div>
+      <div class="card" style="border-top:3px solid var(--drug)"><span class="k">Trastornos psicóticos</span><h3>Inducido por sustancias o medicamentos</h3><p>Psicosis causada por <strong>consumo, abuso o abstinencia</strong> de sustancias.</p>
+        <ul class="ticks" style="font-size:15px"><li><strong>Drogas recreativas:</strong> cocaína, metanfetaminas, LSD, ketamina, cannabis en dosis altas.</li><li><strong>Alcohol:</strong> delirium tremens en abstinencia grave.</li><li><strong>Medicamentos:</strong> corticoides, antiparkinsonianos, anticolinérgicos.</li></ul>
+        <p class="note">Desaparece al eliminar la sustancia · desintoxicación y, en algunos casos, antipsicóticos a corto plazo.</p></div>
+    </div>
+  </div></div>
+</section>
+
+</main>
+
+<footer style="background:var(--brand)">
+  <div class="foot2">
+    <p style="font-size:15px;line-height:1.6;margin:0">Herramienta de apoyo educativo para profesionales y estudiantes de la salud. No sustituye el juicio clínico ni la valoración individual de cada paciente. Los modelos animados son didácticos: sus valores son ilustrativos, no mediciones clínicas.</p>
+    <p style="font-size:13px;opacity:.85;max-width:84ch;margin:0">Referencias: American Psychiatric Association. Manual diagnóstico y estadístico de los trastornos mentales (DSM-5-TR). 2022 · National Institute of Mental Health (NIMH). Schizophrenia. 2024 · McCutcheon RA, Reis Marques T, Howes OD. Schizophrenia — an overview. JAMA Psychiatry 2020;77:201–210 · Howes OD, Kapur S. The dopamine hypothesis of schizophrenia: version III. Schizophr Bull 2009;35:549–562 · Kapur S. Psychosis as a state of aberrant salience. Am J Psychiatry 2003;160:13–23 · Sadock BJ, Sadock VA, Ruiz P. Kaplan &amp; Sadock. Sinopsis de psiquiatría. 12.ª ed. 2022. Contenido elaborado de forma independiente por MedON; no está afiliado ni avalado por las organizaciones citadas.</p>
+    <p style="font-family:var(--f-mono);font-size:13px;letter-spacing:.04em;opacity:.85;margin:0">© 2026 MedON · Medicina interactiva</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const SPEED = RM ? 0.35 : 1;
+const $ = id => document.getElementById(id);
+const clamp = (v,a=0,b=1)=>Math.max(a,Math.min(b,v));
+const pct = v => Math.round(v*100)+'%';
+function rng(seed){return function(){seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function el(tag,cls,html){const e=document.createElement(tag);if(cls)e.className=cls;if(html!=null)e.innerHTML=html;return e}
+
+/* ---------- colores ---------- */
+const C={};
+function readTokens(){const cs=getComputedStyle(document.documentElement);
+  ['ink','muted','line','surface','stage','bg','green','glu','gaba','da','drug','alert'].forEach(k=>C[k]=cs.getPropertyValue('--'+k).trim());}
+readTokens();
+new MutationObserver(()=>{readTokens();update()}).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+function alpha(hex,a){const h=(hex||'#888').replace('#','');const n=parseInt(h.length===3?h.split('').map(c=>c+c).join(''):h,16);return `rgba(${n>>16&255},${n>>8&255},${n&255},${a})`}
+
+/* ---------- canvas ---------- */
+const loops=[];
+function stage(cv){const o={cv,ctx:cv.getContext('2d'),w:1,h:1,vis:true};
+  const fit=()=>{const r=cv.getBoundingClientRect();const d=Math.min(devicePixelRatio||1,2);o.w=Math.max(1,r.width);o.h=Math.max(1,r.height);cv.width=Math.round(o.w*d);cv.height=Math.round(o.h*d);o.ctx.setTransform(d,0,0,d,0,0);o.onresize&&o.onresize()};
+  new ResizeObserver(fit).observe(cv);fit();
+  new IntersectionObserver(es=>es.forEach(e=>o.vis=e.isIntersecting),{rootMargin:'120px'}).observe(cv);
+  return o;}
+function label(ctx,txt,x,y,col,size=12,align='left',weight=600){ctx.font=`${weight} ${size}px Poppins, system-ui, sans-serif`;ctx.fillStyle=col;ctx.textAlign=align;ctx.textBaseline='middle';ctx.fillText(txt,x,y)}
+const now=()=>performance.now()/1000;
+let HL1=null,HL2=null;
+function callout(ctx,w,x,y,r,txt,col,side){const pr=r+(RM?0:Math.sin(now()*4)*2);
+  ctx.strokeStyle=col;ctx.lineWidth=2;ctx.setLineDash([4,3]);ctx.beginPath();ctx.arc(x,y,pr,0,7);ctx.stroke();ctx.setLineDash([]);
+  if(!txt)return;ctx.font='600 11.5px Poppins, system-ui, sans-serif';const tw=ctx.measureText(txt).width;
+  const left=side?side==='l':x>w/2;let bx=left?x-pr-12-tw-12:x+pr+12;bx=clamp(bx,4,w-tw-16);const by=y-11;
+  ctx.strokeStyle=col;ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(left?x-pr:x+pr,y);ctx.lineTo(left?bx+tw+12:bx,y);ctx.stroke();
+  ctx.fillStyle=col;ctx.beginPath();ctx.roundRect(bx,by,tw+12,22,6);ctx.fill();label(ctx,txt,bx+6,y,C.surface,11.5,'left',600)}
+function banner(ctx,w,txt,col){ctx.font='600 11.5px Poppins, system-ui, sans-serif';const tw=ctx.measureText(txt).width;ctx.fillStyle=col;ctx.beginPath();ctx.roundRect(8,8,tw+14,22,6);ctx.fill();label(ctx,txt,15,19,C.surface,11.5,'left',600)}
+function makeGuide(id,intro,steps,onStep){const root=$(id);let i=-1;
+  root.innerHTML='<div class="gh"><span class="eyebrow">Paso a paso</span><div class="gdots"></div></div><h3></h3><p></p><div class="gnav"><button class="btn" data-a="p">← Anterior</button><button class="btn primary" data-a="n">Comenzar</button></div>';
+  const dots=root.querySelector('.gdots'),h=root.querySelector('h3'),p=root.querySelector('p'),prev=root.querySelector('[data-a="p"]'),next=root.querySelector('[data-a="n"]');
+  steps.forEach((s,k)=>{const b=el('button',null,String(k+1));b.setAttribute('aria-label','Paso '+(k+1)+': '+s.t);b.onclick=()=>go(k);dots.appendChild(b)});
+  function go(k){i=clamp(k,0,steps.length-1);const s=steps[i];h.textContent=(i+1)+'. '+s.t;p.innerHTML=s.p;
+    [...dots.children].forEach((b,j)=>{if(j===i)b.setAttribute('aria-current','step');else b.removeAttribute('aria-current');if(j===i)b.classList.add('seen')});
+    prev.disabled=i===0;next.textContent=i===steps.length-1?'Volver al paso 1':'Siguiente →';onStep(s)}
+  h.textContent=intro[0];p.innerHTML=intro[1];prev.disabled=true;
+  prev.onclick=()=>go(i-1);next.onclick=()=>go(i>=steps.length-1?0:i+1);}
+
+/* =========================================================
+   01 · Tipos de pensamiento
+   ========================================================= */
+const TYPES=[
+ ['Lógico','Razona paso a paso, aplicando reglas y evidencia para llegar a conclusiones válidas.',['Secuencial y ordenado','Basado en premisas y evidencia','Busca relaciones de causa y efecto']],
+ ['Crítico','Evalúa la información de forma objetiva, cuestiona los supuestos y juzga su validez antes de aceptarla.',['Cuestiona y verifica las fuentes','Detecta sesgos y errores','Fundamenta las decisiones']],
+ ['Creativo','Genera ideas nuevas y soluciones originales al ver los problemas desde otros ángulos.',['Flexible y divergente','Produce muchas alternativas','Combina ideas de forma novedosa']],
+ ['Analítico','Descompone un problema complejo en sus partes para comprender cada una y su función.',['Separa y clasifica','Examina los detalles','Identifica patrones']],
+ ['Sintético','Integra elementos separados en un todo coherente y con sentido.',['Une y resume','Relaciona hallazgos dispersos','Construye una visión de conjunto']],
+ ['Sistémico','Comprende la realidad como un sistema de partes interconectadas que se influyen entre sí.',['Visión global','Enfocado en las interacciones','Considera el contexto']],
+ ['Estratégico','Planea acciones a mediano y largo plazo para alcanzar objetivos definidos.',['Orientado a metas','Anticipa escenarios','Prioriza recursos']],
+ ['Emocional','Reconoce, comprende y usa las emociones propias y ajenas en el razonamiento y la toma de decisiones.',['Empatía','Autorregulación','Lectura del estado afectivo del otro']],
+ ['Reflexivo','Revisa las propias experiencias, ideas y acciones para aprender de ellas y mejorar.',['Introspectivo','Autoevaluación constante','Aprende de los errores']]];
+TYPES.forEach(([n,d,f],i)=>{const b=el('button','type',`<b>${String(i+1).padStart(2,'0')}</b><strong>Pensamiento ${n.toLowerCase()}</strong><p>${d}</p><ul>${f.map(x=>`<li>${x}</li>`).join('')}</ul>`);
+  b.setAttribute('aria-expanded',i===0?'true':'false');b.onclick=()=>b.setAttribute('aria-expanded',b.getAttribute('aria-expanded')==='true'?'false':'true');$('types').appendChild(b)});
+
+/* =========================================================
+   01 · Curso y forma (trayectoria del pensamiento)
+   ========================================================= */
+const TH={
+ normal:{g:'ref',n:'Pensamiento normal',sp:1,reach:1,d:'Las ideas avanzan a una velocidad adecuada, en orden, y llegan a la respuesta.',
+   w:[[.3,.5,'Vine porque'],[.5,.5,'llevo tres semanas'],[.7,.5,'sin dormir bien'],[.92,.5,'y mi familia está preocupada.']]},
+ taqui:{g:'curso',n:'Taquipsiquia',sp:2.6,reach:1,d:'Aceleración del curso del pensamiento. Las ideas fluyen rápido pero conservan la conexión y llegan a la meta. Se ve en la manía, la ansiedad y el consumo de estimulantes.',
+   w:[[.18,.44,'Vine porque no duermo,'],[.28,.56,'tres semanas así,'],[.38,.44,'me acuesto, me levanto,'],[.48,.56,'pienso en todo,'],[.58,.44,'en el trabajo,'],[.68,.56,'en las cuentas,'],[.8,.46,'en la casa,'],[.92,.5,'y mi familia está preocupada.']]},
+ bradi:{g:'curso',n:'Bradipsiquia',sp:.32,reach:1,pause:1.4,d:'Enlentecimiento del pensamiento, con aumento de la latencia de respuesta. Se ve en la depresión, el hipotiroidismo y los cuadros orgánicos.',
+   w:[[.3,.5,'Vine…'],[.5,.5,'porque…'],[.7,.5,'no duermo…'],[.92,.5,'bien.']]},
+ fuga:{g:'curso',n:'Fuga de ideas',sp:2.8,reach:0,d:'Aceleración extrema: salta de una idea a otra por asociaciones superficiales (sonidos, palabras) y no llega a la meta. Es típica de la manía.',
+   w:[[.2,.42,'Vine en bus,'],[.3,.26,'bus azul,'],[.42,.36,'azul como el mar,'],[.52,.18,'el mar de Cartagena,'],[.63,.3,'Cartagena de Indias,'],[.72,.14,'independencia,'],[.84,.24,'¡yo soy independiente, doctor!']]},
+ bloqueo:{g:'curso',n:'Bloqueo',sp:1,reach:0,d:'Interrupción brusca del curso del pensamiento: el paciente se detiene en mitad de la frase y no recuerda lo que decía. Sugiere esquizofrenia.',
+   w:[[.3,.5,'Vine porque'],[.48,.5,'mi familia dice que yo…',2.6],[.3,.82,'…(silencio)…',0,'j'],[.56,.82,'¿qué me había preguntado?']]},
+ circ:{g:'forma',n:'Circunstancialidad',sp:1.5,reach:1,d:'Respuesta con muchos detalles innecesarios y rodeos, pero al final llega a la meta.',
+   w:[[.2,.2,'El martes salí temprano,'],[.32,.8,'pasé por la panadería,'],[.44,.2,'la de la puerta verde,'],[.56,.8,'mi hermana me llamó'],[.7,.22,'para lo del almuerzo…'],[.92,.5,'y bueno, vine porque no duermo.']]},
+ tang:{g:'forma',n:'Tangencialidad',sp:1.2,reach:0,d:'La respuesta se aleja de la pregunta y nunca llega a la meta. Solo el inicio se relaciona con lo preguntado.',
+   w:[[.26,.46,'El hospital…'],[.42,.36,'mi tío trabajó en uno en Pereira,'],[.58,.25,'allá hace más calor,'],[.74,.16,'me gusta ese clima,'],[.86,.1,'uno allá come muy bien.']]},
+ desc:{g:'forma',n:'Descarrilamiento',sp:1.1,reach:0,d:'Asociaciones laxas: pasa de una idea a otra sin relación lógica entre ellas. Es frecuente en la esquizofrenia.',
+   w:[[.34,.5,'Vine por el sueño.'],[.4,.2,'Las nubes',0,'j'],[.62,.2,'guardan los números del banco.'],[.66,.8,'Mi zapato izquierdo',0,'j'],[.88,.8,'vota los domingos.']]},
+ incoh:{g:'forma',n:'Incoherencia',sp:1.4,reach:0,d:'Pérdida de la conexión incluso dentro de la frase. En su forma extrema se llama ensalada de palabras.',
+   w:[[.18,.3,'Hospital'],[.26,.72,'vine'],[.36,.22,'azul'],[.44,.66,'porque'],[.52,.34,'dormir'],[.6,.8,'no'],[.68,.18,'la cuchara'],[.78,.6,'ventana'],[.86,.36,'siempre.']]}};
+let thKey='normal';const TS={pts:[],i:0,x:.08,y:.5,pause:0,done:0,txt:[]};
+function thReset(){TS.pts=[{x:.08,y:.5,j:0}];TS.i=0;TS.x=.08;TS.y=.5;TS.pause=.4;TS.done=0;TS.txt=[];$('thTxt').innerHTML=''}
+function thSelect(k){thKey=k;const m=TH[k];document.querySelectorAll('[data-th]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.th===k?'true':'false'));
+  $('thName').textContent=m.n;$('thSpeed').textContent=m.sp>2?'velocidad muy alta':m.sp>1.3?'velocidad alta':m.sp<.5?'velocidad lenta':'velocidad normal';
+  $('thDef').innerHTML=`<span class="k">${m.g==='curso'?'Alteración del curso':m.g==='forma'?'Alteración de la forma':'Referencia'}</span><h3>${m.n}</h3><p>${m.d}</p><span class="pill ${m.reach?'ok':'bad'}">${m.reach?'Llega a la respuesta':'No llega a la respuesta'}</span>`;thReset()}
+[['thCurso',['normal','taqui','bradi','fuga','bloqueo']],['thForma',['circ','tang','desc','incoh']]].forEach(([id,ks])=>ks.forEach(k=>{const b=el('button','btn',TH[k].n);b.dataset.th=k;b.onclick=()=>thSelect(k);$(id).appendChild(b)}));
+const thSt=stage($('cvThought'));
+function drawThought(dt){const {ctx,w,h}=thSt;dt*=SPEED;const m=TH[thKey];ctx.clearRect(0,0,w,h);
+  const X=x=>x*w,Y=y=>20+y*(h-40);
+  // pregunta y meta
+  const goal={x:.92,y:.5};
+  ctx.setLineDash([4,6]);ctx.strokeStyle=C.line;ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(X(.08),Y(.5));ctx.lineTo(X(goal.x),Y(goal.y));ctx.stroke();ctx.setLineDash([]);
+  // avance
+  if(!TS.done){if(TS.pause>0)TS.pause-=dt;else{const wp=m.w[TS.i];const tx=wp[0],ty=wp[1];
+      const dxp=(tx-TS.x)*w,dyp=(ty-TS.y)*(h-40),dist=Math.hypot(dxp,dyp);const stepL=m.sp*170*dt;const jump=wp[4]==='j';
+      if(jump||dist<=stepL){TS.x=tx;TS.y=ty;TS.pts.push({x:tx,y:ty,j:jump?1:0,t:wp[2]});TS.txt.push(wp[2]);$('thTxt').appendChild(el('span',null,(TS.txt.length>1?' ':'')+wp[2]));
+        TS.pause=wp[3]!=null&&wp[3]>0?wp[3]:(m.pause||.25/m.sp);TS.i++;if(TS.i>=m.w.length){TS.done=2.8}}
+      else{TS.x+=dxp/dist*stepL/w;TS.y+=dyp/dist*stepL/(h-40)}}}
+  else{TS.done-=dt;if(TS.done<=0)thReset()}
+  // trazo
+  const col=m.g==='forma'?C.glu:m.g==='curso'?C.green:C.ink;
+  ctx.lineWidth=3;ctx.lineCap='round';ctx.lineJoin='round';ctx.strokeStyle=col;ctx.beginPath();
+  TS.pts.forEach((p,i)=>{if(i===0||p.j)ctx.moveTo(X(p.x),Y(p.y));else ctx.lineTo(X(p.x),Y(p.y))});
+  if(!TS.done&&TS.pause<=0){ctx.lineTo(X(TS.x),Y(TS.y))}ctx.stroke();
+  // etiquetas de ideas
+  TS.pts.forEach((p,i)=>{if(!p.t)return;ctx.fillStyle=col;ctx.beginPath();ctx.arc(X(p.x),Y(p.y),4.5,0,7);ctx.fill();
+    const t=p.t.length>26?p.t.slice(0,25)+'…':p.t;const up=(i%2===0);label(ctx,t,X(p.x),Y(p.y)+(up?-14:16),C.ink,11.5,'center',500)});
+  // cabeza
+  if(!TS.done){const pulse=RM?0:Math.sin(now()*8)*2;ctx.fillStyle=alpha(col,.25);ctx.beginPath();ctx.arc(X(TS.x),Y(TS.y),10+pulse,0,7);ctx.fill();ctx.fillStyle=col;ctx.beginPath();ctx.arc(X(TS.x),Y(TS.y),5,0,7);ctx.fill()}
+  // nodos
+  ctx.fillStyle=C.surface;ctx.strokeStyle=C.ink;ctx.lineWidth=2;ctx.beginPath();ctx.arc(X(.08),Y(.5),11,0,7);ctx.fill();ctx.stroke();
+  label(ctx,'Pregunta',X(.08),Y(.5)+24,C.muted,11,'center',600);
+  const reached=TS.done&&m.reach,failed=TS.done&&!m.reach;
+  ctx.fillStyle=reached?C.green:C.surface;ctx.strokeStyle=failed?C.alert:C.green;ctx.lineWidth=2.5;ctx.beginPath();ctx.arc(X(goal.x),Y(goal.y),13,0,7);ctx.fill();ctx.stroke();
+  label(ctx,'Respuesta',X(goal.x),Y(goal.y)+26,failed?C.alert:C.green,11,'center',600);
+  if(TS.done)label(ctx,reached?'Llega a la meta':'No llega a la meta',w/2,h-12,reached?C.green:C.alert,12,'center',600);
+}
+loops.push([thSt,drawThought]);thSelect('normal');
+
+/* =========================================================
+   01 · Tálamo
+   ========================================================= */
+const SENSES=[
+ {n:'Visión',nuc:'Núcleo geniculado lateral',ab:'NGL',ctx:'Lóbulo occipital',y:.13,ny:.30,nx:.47},
+ {n:'Audición',nuc:'Núcleo geniculado medial',ab:'NGM',ctx:'Lóbulo temporal',y:.32,ny:.38,nx:.55},
+ {n:'Tacto y posición',nuc:'Núcleo ventral posterolateral',ab:'VPL',ctx:'Lóbulo parietal',y:.51,ny:.47,nx:.46},
+ {n:'Gusto',nuc:'Núcleo ventral posteromedial',ab:'VPM',ctx:'Ínsula',y:.70,ny:.55,nx:.55},
+ {n:'Olfato',nuc:null,ab:null,ctx:'Corteza olfatoria',y:.89}];
+let thalSel=0,thalAuto=true,thalT=0;const thalParts=[];
+SENSES.forEach((s,i)=>{const b=el('button','chip',s.n);b.dataset.s=i;b.onclick=()=>{thalAuto=false;$('thalAuto').textContent='selección manual';thalPick(i)};$('senses').appendChild(b)});
+function thalPick(i){thalSel=i;thalParts.length=0;document.querySelectorAll('#senses .chip').forEach(b=>b.setAttribute('aria-pressed',+b.dataset.s===i?'true':'false'));const s=SENSES[i];
+  $('thalDet').innerHTML=`<span class="tagl">Vía ${s.n.toLowerCase()}</span><h3>${s.n} → ${s.nuc?s.nuc+' → ':''}${s.ctx}</h3><p style="color:var(--muted);font-size:15px">${s.nuc?'El tálamo recibe casi toda la información sensorial y la envía a áreas específicas de la corteza cerebral.':'<strong style="color:var(--ink)">No pasa por el tálamo:</strong> la vía olfatoria va del bulbo olfatorio directamente a la corteza olfatoria.'}</p>`}
+thalPick(0);
+const thal=stage($('cvThal'));
+function thalPath(s,w,h){const sx=.11*w,sy=s.y*h,tx=.86*w,ty=s.y*h;
+  if(!s.nuc)return [[{x:sx,y:sy},{x:.22*w,y:sy},{x:.32*w,y:sy}],[{x:.32*w,y:sy},{x:.6*w,y:sy},{x:tx,y:ty}]];
+  const nx=s.nx*w,ny=s.ny*h;return [[{x:sx,y:sy},{x:.3*w,y:sy},{x:nx,y:ny}],[{x:nx,y:ny},{x:.7*w,y:ty},{x:tx,y:ty}]]}
+const qb=(p,u)=>{const [a,c,b]=p;const m=1-u;return{x:m*m*a.x+2*m*u*c.x+u*u*b.x,y:m*m*a.y+2*m*u*c.y+u*u*b.y}};
+function drawThal(dt){const {ctx,w,h}=thal;dt*=SPEED;ctx.clearRect(0,0,w,h);
+  if(thalAuto){thalT+=dt;if(thalT>4.2){thalT=0;thalPick((thalSel+1)%SENSES.length)}}
+  // tálamo
+  ctx.fillStyle=alpha(C.green,.12);ctx.strokeStyle=C.green;ctx.lineWidth=2;ctx.beginPath();ctx.ellipse(.505*w,.43*h,.09*w,.21*h,0,0,7);ctx.fill();ctx.stroke();
+  label(ctx,'TÁLAMO',.505*w,.43*h-.24*h,C.green,12,'center',700);
+  // bulbo
+  const ob=SENSES[4];ctx.fillStyle=alpha(C.glu,.15);ctx.strokeStyle=C.glu;ctx.beginPath();ctx.ellipse(.32*w,ob.y*h,22,11,0,0,7);ctx.fill();ctx.stroke();
+  label(ctx,'Bulbo olfatorio',.32*w,ob.y*h-19,C.muted,10.5,'center',500);
+  SENSES.forEach((s,i)=>{const [p1,p2]=thalPath(s,w,h);const on=i===thalSel;const col=on?(s.nuc?C.gaba:C.glu):alpha(C.muted,.3);
+    ctx.strokeStyle=col;ctx.lineWidth=on?3:1.5;[p1,p2].forEach(p=>{ctx.beginPath();ctx.moveTo(p[0].x,p[0].y);ctx.quadraticCurveTo(p[1].x,p[1].y,p[2].x,p[2].y);ctx.stroke()});
+    // origen y destino
+    ctx.fillStyle=on?col:C.surface;ctx.strokeStyle=on?col:C.muted;ctx.lineWidth=2;ctx.beginPath();ctx.arc(.11*w,s.y*h,8,0,7);ctx.fill();ctx.stroke();
+    const narrow=w<1000;
+    if(narrow)label(ctx,s.n,6,s.y*h+17,on?C.ink:C.muted,10.5,'left',on?600:500);else label(ctx,s.n,.11*w-14,s.y*h,on?C.ink:C.muted,11.5,'right',on?600:500);
+    ctx.fillStyle=on?col:C.surface;ctx.beginPath();ctx.roundRect(.86*w-4,s.y*h-9,16,18,4);ctx.fill();ctx.stroke();
+    if(narrow)label(ctx,s.ctx,w-6,s.y*h-16,on?C.ink:C.muted,10.5,'right',on?600:500);else label(ctx,s.ctx,.86*w+18,s.y*h,on?C.ink:C.muted,11.5,'left',on?600:500);
+    if(s.nuc){ctx.fillStyle=on?C.gaba:alpha(C.muted,.6);ctx.beginPath();ctx.arc(s.nx*w,s.ny*h,on?6:4,0,7);ctx.fill()}});
+  // partículas
+  const s=SENSES[thalSel];const [p1,p2]=thalPath(s,w,h);
+  if(Math.random()<dt*6)thalParts.push({u:0});
+  for(let i=thalParts.length-1;i>=0;i--){const q=thalParts[i];q.u+=dt*.55;if(q.u>=2){thalParts.splice(i,1);continue}
+    const p=q.u<1?qb(p1,q.u):qb(p2,q.u-1);const col=s.nuc?C.gaba:C.glu;ctx.fillStyle=alpha(col,.25);ctx.beginPath();ctx.arc(p.x,p.y,8,0,7);ctx.fill();ctx.fillStyle=col;ctx.beginPath();ctx.arc(p.x,p.y,3.5,0,7);ctx.fill()}
+  // nombres de los núcleos talámicos (encima de las vías)
+  const fs=w<620?9.5:11;
+  SENSES.forEach((n,i)=>{if(!n.nuc)return;const on=i===thalSel;const left=n.nx<.5;
+    const l1=n.nuc.replace(/ (lateral|medial|posterolateral|posteromedial)$/,''),l2=n.nuc.slice(l1.length+1)+' · '+n.ab;
+    ctx.font=`600 ${fs}px Poppins, system-ui, sans-serif`;const tw=Math.max(ctx.measureText(l1).width,ctx.measureText(l2).width);
+    const x=n.nx*w+(left?-12:12),y=n.ny*h;const bx=left?x-tw-6:x-6;
+    ctx.fillStyle=alpha(C.stage,.9);ctx.strokeStyle=on?C.gaba:C.line;ctx.lineWidth=1;ctx.beginPath();ctx.roundRect(bx,y-fs-5,tw+12,fs*2+10,5);ctx.fill();ctx.stroke();
+    const col=on?C.gaba:C.muted;label(ctx,l1,x,y-fs/2-1,col,fs,left?'right':'left',on?600:500);label(ctx,l2,x,y+fs/2+2,on?C.ink:C.muted,fs,left?'right':'left',600)});
+}
+loops.push([thal,drawThal]);
+
+/* =========================================================
+   02 · Ilusión vs alucinación
+   ========================================================= */
+const ia=stage($('cvIA'));
+const VOICES=['«Te están vigilando»','«No confíes en nadie»','«Ellos saben lo que piensas»'];
+function coat(ctx,cx,base,s,m,col){ // perchero con abrigo; m: 0 abrigo, 1 persona
+  ctx.strokeStyle=alpha(C.muted,.7);ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(cx,base);ctx.lineTo(cx,base-120*s);ctx.stroke();
+  ctx.fillStyle=col;ctx.beginPath();ctx.moveTo(cx-14*s,base-108*s);ctx.lineTo(cx+14*s,base-108*s);ctx.lineTo(cx+26*s+6*m*s,base-30*s);ctx.lineTo(cx-26*s-6*m*s,base-30*s);ctx.closePath();ctx.fill();
+  const hr=(8+6*m)*s;ctx.beginPath();ctx.arc(cx,base-118*s-hr*.6*m,hr,0,7);ctx.fill();
+  if(m>.6){ctx.fillStyle=alpha(C.alert,(m-.6)/.4);ctx.beginPath();ctx.arc(cx-4*s,base-120*s-hr*.6*m,1.8*s,0,7);ctx.arc(cx+4*s,base-120*s-hr*.6*m,1.8*s,0,7);ctx.fill()}}
+function room(ctx,x,y,w,h){ctx.strokeStyle=C.line;ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(x+10,y+h-18);ctx.lineTo(x+w-10,y+h-18);ctx.stroke();
+  ctx.strokeRect(x+w*.62,y+22,w*.22,h*.3);ctx.beginPath();ctx.moveTo(x+w*.73,y+22);ctx.lineTo(x+w*.73,y+22+h*.3);ctx.stroke()}
+function drawIA(dt){const {ctx,w,h}=ia;ctx.clearRect(0,0,w,h);const t=now()*SPEED;const cw=w/2,rh=(h-36)/2;
+  label(ctx,'ILUSIÓN',cw/2,14,C.glu,12,'center',700);label(ctx,'ALUCINACIÓN',cw+cw/2,14,C.da,12,'center',700);
+  ctx.strokeStyle=C.line;ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(cw,0);ctx.lineTo(cw,h);ctx.moveTo(0,28+rh);ctx.lineTo(w,28+rh);ctx.stroke();
+  const s=Math.min(.85,rh/175);
+  // filas
+  [0,1].forEach(r=>{const y=28+r*rh;label(ctx,r?'Lo que percibe el paciente':'Estímulo real',10,y+14,C.muted,10.5,'left',600);label(ctx,r?'Lo que percibe el paciente':'Estímulo real',cw+10,y+14,C.muted,10.5,'left',600)});
+  // ilusión real
+  room(ctx,0,28,cw,rh);coat(ctx,cw*.38,28+rh-18,s,0,alpha(C.ink,.55));label(ctx,'abrigo en un perchero',cw*.38,28+rh-8,C.muted,10,'center',500);
+  // ilusión percibida
+  const m=RM?.85:(Math.sin(t*.9)+1)/2;room(ctx,0,28+rh,cw,rh);coat(ctx,cw*.38,28+2*rh-18,s,m,alpha(C.ink,.55+.3*m));
+  label(ctx,m>.6?'«Hay un hombre mirándome»':'…',cw*.7,28+rh+rh*.55,C.glu,11.5,'center',600);
+  // alucinación real
+  room(ctx,cw,28,cw,rh);ctx.strokeStyle=C.muted;ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(cw+cw*.15,28+rh*.62);ctx.lineTo(cw+cw*.5,28+rh*.62);ctx.stroke();
+  label(ctx,'silencio: no hay sonido',cw+cw*.32,28+rh*.62+14,C.muted,10,'center',500);
+  // alucinación percibida
+  room(ctx,cw,28+rh,cw,rh);const cx=cw+cw*.3,cy=28+rh+rh*.58;
+  ctx.strokeStyle=C.da;ctx.lineWidth=2;ctx.beginPath();for(let x=0;x<=cw*.36;x+=2){const yy=cy+Math.sin(x*.18+t*6)*8*Math.sin(x/(cw*.36)*Math.PI);x?ctx.lineTo(cw+cw*.12+x,yy):ctx.moveTo(cw+cw*.12+x,yy)}ctx.stroke();
+  for(let k=0;k<3;k++){const ph=(t*.7+k/3)%1;ctx.strokeStyle=alpha(C.da,1-ph);ctx.beginPath();ctx.arc(cx+cw*.32,cy,10+ph*30,-.9,.9);ctx.stroke()}
+  const vi=Math.floor(t/2.6)%VOICES.length;const va=RM?1:Math.min(1,Math.sin((t%2.6)/2.6*Math.PI)*1.6);
+  label(ctx,VOICES[vi],cw+cw*.42,28+rh+rh*.32,alpha(C.da,va),11.5,'center',600);
+}
+loops.push([ia,drawIA]);
+
+/* =========================================================
+   02 · Tipos de alucinaciones
+   ========================================================= */
+const HAL=[
+ {k:'vis',n:'Alucinaciones visuales',s:'Visual',d:'Percepción de imágenes sin estímulo real: personas, luces, figuras o escenas inexistentes.',f:['Simples: destellos, luces, formas','Complejas: personas, animales, escenas','Frecuentes en delirium y cuadros orgánicos']},
+ {k:'aud',n:'Alucinaciones auditivas',s:'Auditiva',d:'Percepción de voces, sonidos o música sin una fuente externa.',f:['Las más frecuentes en la esquizofrenia','Voces que comentan, conversan u ordenan','Pueden ser imperativas: riesgo de conductas peligrosas']},
+ {k:'olf',n:'Alucinaciones olfatorias',s:'Olfatoria',d:'Percepción de olores inexistentes, por lo general desagradables.',f:['Olor a quemado, podrido o a gas','Se asocian a epilepsia del lóbulo temporal','Pueden acompañar delirios somáticos']},
+ {k:'gus',n:'Alucinaciones gustativas',s:'Gustativa',d:'Percepción de sabores sin un estímulo real.',f:['Sabores metálicos, amargos o extraños','Suelen acompañar a las olfatorias','Pueden alimentar ideas de envenenamiento']},
+ {k:'tac',n:'Alucinaciones táctiles o hápticas',s:'Táctil o háptica',d:'Sensación de que algo toca, recorre o pica la piel sin estímulo real.',f:['Insectos bajo la piel (formicación)','Frecuentes en abstinencia alcohólica y consumo de cocaína','Pueden asociarse a delirio de parasitosis']},
+ {k:'cin',n:'Alucinaciones cinestésicas',s:'Cinestésica',d:'Falsa sensación de movimiento o de cambios en el propio cuerpo.',f:['Sentir que el cuerpo se mueve, gira o cae','Percibir órganos que se desplazan o cambian','Se relacionan con delirios somáticos']}];
+let halI=0;const R6=rng(9);const bugs=[...Array(14)].map(()=>({u:R6(),v:R6(),a:R6()*6.28}));
+HAL.forEach((x,i)=>{const b=el('button','btn',x.s);b.dataset.h=i;b.onclick=()=>halPick(i);$('halBtns').appendChild(b)});
+function halPick(i){halI=i;const x=HAL[i];$('halN').textContent=String(i+1).padStart(2,'0');$('halTitle').textContent=x.n;$('halDef').textContent=x.d;$('halBar').textContent=x.s;
+  $('halList').innerHTML=x.f.map(f=>`<li>${f}</li>`).join('');document.querySelectorAll('#halBtns .btn').forEach(b=>b.setAttribute('aria-pressed',+b.dataset.h===i?'true':'false'))}
+halPick(0);
+const hal=stage($('cvHal'));
+function drawHal(dt){const {ctx,w,h}=hal;ctx.clearRect(0,0,w,h);const t=now()*SPEED;const cx=w/2,cy=h/2,S=Math.min(w,h)/340;const k=HAL[halI].k;
+  ctx.lineCap='round';ctx.lineJoin='round';
+  if(k==='vis'){ // destellos simples + figura compleja
+    for(let i=0;i<9;i++){const ph=(t*.6+i*.37)%1;const x=w*(.12+.76*((i*.618)%1)),y=h*(.15+.3*((i*.381)%1));ctx.fillStyle=alpha(C.glu,Math.sin(ph*Math.PI));ctx.beginPath();ctx.arc(x,y,3+6*Math.sin(ph*Math.PI),0,7);ctx.fill()}
+    label(ctx,'Simples: destellos y luces',w*.5,h*.08,C.muted,11,'center',500);
+    const a=RM?.8:(Math.sin(t*.8)+1)/2;ctx.fillStyle=alpha(C.da,.15+.6*a);ctx.beginPath();ctx.arc(cx,h*.58,16*S,0,7);ctx.fill();
+    ctx.beginPath();ctx.moveTo(cx-24*S,h*.92);ctx.quadraticCurveTo(cx-26*S,h*.66,cx,h*.65);ctx.quadraticCurveTo(cx+26*S,h*.66,cx+24*S,h*.92);ctx.fill();
+    label(ctx,'Complejas: una persona que no está',cx,h*.96,C.muted,11,'center',500)}
+  if(k==='aud'){ // cabeza de perfil y voces
+    ctx.strokeStyle=C.ink;ctx.lineWidth=2.5;ctx.beginPath();ctx.arc(cx-40*S,cy,62*S,Math.PI*.35,Math.PI*1.9);ctx.stroke();
+    ctx.beginPath();ctx.arc(cx+8*S,cy+4*S,10*S,-1.4,1.4);ctx.stroke();
+    for(let i=0;i<4;i++){const ph=(t*.55+i/4)%1;ctx.strokeStyle=alpha(C.da,1-ph);ctx.lineWidth=2.5;ctx.beginPath();ctx.arc(cx+30*S,cy+4*S,120*S*(1-ph)+12*S,-.6,.6);ctx.stroke()}
+    const V=['«Comenta todo lo que haces»','«Hablan de ti entre ellos»','«¡Hazlo ahora!»'];const vi=Math.floor(t/2.4)%3;
+    label(ctx,V[vi],cx+90*S,cy-80*S,vi===2?C.alert:C.da,12.5,'center',600);
+    label(ctx,vi===2?'voz imperativa':vi===1?'voces que conversan':'voz que comenta',cx+90*S,cy-62*S,C.muted,10.5,'center',500)}
+  if(k==='olf'){ // nariz con vapores
+    ctx.strokeStyle=C.ink;ctx.lineWidth=2.5;ctx.beginPath();ctx.moveTo(cx-60*S,cy-90*S);ctx.quadraticCurveTo(cx-40*S,cy,cx-10*S,cy+40*S);ctx.lineTo(cx-50*S,cy+46*S);ctx.stroke();
+    for(let i=0;i<5;i++){ctx.strokeStyle=alpha(C.glu,.75);ctx.lineWidth=2;ctx.beginPath();for(let y=0;y<130*S;y+=3){const x=cx+40*S+i*18*S+Math.sin(y*.06-t*3+i)*8*S;y?ctx.lineTo(x,cy+60*S-y):ctx.moveTo(x,cy+60*S)}ctx.stroke()}
+    label(ctx,'«Huele a quemado»',cx+80*S,cy-90*S,C.glu,12.5,'center',600);label(ctx,'sin fuente real',cx+80*S,cy-72*S,C.muted,10.5,'center',500)}
+  if(k==='gus'){ // boca y gotas
+    ctx.strokeStyle=C.ink;ctx.lineWidth=2.5;ctx.beginPath();ctx.moveTo(cx-70*S,cy);ctx.quadraticCurveTo(cx,cy+50*S,cx+70*S,cy);ctx.quadraticCurveTo(cx,cy-20*S,cx-70*S,cy);ctx.stroke();
+    ctx.fillStyle=alpha(C.da,.5);ctx.beginPath();ctx.ellipse(cx,cy+12*S,34*S,12*S,0,0,7);ctx.fill();
+    for(let i=0;i<5;i++){const ph=(t*.5+i/5)%1;const x=cx-40*S+i*20*S,y=cy-110*S+ph*100*S;ctx.fillStyle=alpha(C.muted,1-ph*.6);ctx.beginPath();ctx.moveTo(x,y-7*S);ctx.quadraticCurveTo(x+6*S,y+2*S,x,y+5*S);ctx.quadraticCurveTo(x-6*S,y+2*S,x,y-7*S);ctx.fill()}
+    label(ctx,'«Todo sabe a metal»',cx,cy+70*S,C.da,12.5,'center',600);label(ctx,'¿me están envenenando?',cx,cy+88*S,C.muted,10.5,'center',500)}
+  if(k==='tac'){ // brazo con insectos
+    ctx.fillStyle=alpha(C.glu,.16);ctx.strokeStyle=alpha(C.glu,.7);ctx.lineWidth=2;ctx.beginPath();ctx.roundRect(w*.1,cy-34*S,w*.8,68*S,34*S);ctx.fill();ctx.stroke();
+    bugs.forEach((b,i)=>{if(!RM){b.a+=(Math.random()-.5)*.5;b.u+=Math.cos(b.a)*dt*.05;b.v+=Math.sin(b.a)*dt*.12}b.u=(b.u+1)%1;b.v=clamp(b.v,.1,.9);if(b.v<=.1||b.v>=.9)b.a=-b.a;
+      const x=w*(.14+.72*b.u),y=cy-28*S+56*S*b.v;ctx.fillStyle=C.ink;ctx.beginPath();ctx.ellipse(x,y,3.2,2,b.a,0,7);ctx.fill();
+      ctx.strokeStyle=alpha(C.ink,.6);ctx.lineWidth=1;for(let l=-1;l<=1;l++){ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(x+Math.cos(b.a+1.6)*5+l*2,y+Math.sin(b.a+1.6)*5);ctx.moveTo(x,y);ctx.lineTo(x+Math.cos(b.a-1.6)*5+l*2,y+Math.sin(b.a-1.6)*5);ctx.stroke()}});
+    label(ctx,'Formicación: «insectos bajo la piel»',cx,cy-60*S,C.glu,12.5,'center',600);label(ctx,'abstinencia alcohólica · cocaína',cx,cy+60*S,C.muted,10.5,'center',500)}
+  if(k==='cin'){ // cuerpo que se inclina
+    const a=RM?.2:Math.sin(t*1.1)*.35;ctx.save();ctx.translate(cx,cy+70*S);ctx.rotate(a);ctx.strokeStyle=C.ink;ctx.lineWidth=4;
+    ctx.beginPath();ctx.arc(0,-130*S,14*S,0,7);ctx.stroke();ctx.beginPath();ctx.moveTo(0,-116*S);ctx.lineTo(0,-50*S);ctx.moveTo(0,-100*S);ctx.lineTo(-30*S,-70*S);ctx.moveTo(0,-100*S);ctx.lineTo(30*S,-70*S);ctx.moveTo(0,-50*S);ctx.lineTo(-20*S,0);ctx.moveTo(0,-50*S);ctx.lineTo(20*S,0);ctx.stroke();
+    ctx.fillStyle=alpha(C.da,.7);ctx.beginPath();ctx.arc(Math.sin(t*2)*6*S,-82*S,7*S,0,7);ctx.fill();ctx.restore();
+    ctx.strokeStyle=alpha(C.muted,.6);ctx.setLineDash([4,5]);ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(cx,cy+70*S);ctx.lineTo(cx,cy-90*S);ctx.stroke();ctx.setLineDash([]);
+    ctx.strokeStyle=C.da;ctx.lineWidth=2;ctx.beginPath();ctx.arc(cx,cy+70*S,120*S,-Math.PI/2-.4,-Math.PI/2+.4);ctx.stroke();
+    label(ctx,'«Siento que me caigo, que mis órganos se mueven»',cx,h*.08,C.da,12,'center',600);label(ctx,'el cuerpo en realidad está quieto',cx,h-12,C.muted,10.5,'center',500)}
+}
+loops.push([hal,drawHal]);
+
+/* =========================================================
+   03 · Prueba de irreductibilidad
+   ========================================================= */
+const BF={
+ comun:{c:[100,40,10,0],a:'Creo que mi vecino está molesto conmigo por el ruido de la fiesta.',r:['Ah, entonces quizá me equivoqué.','Tiene sentido, no era conmigo.','Sí, ya no lo creo.'],tag:'Se ajusta a la evidencia'},
+ sobre:{c:[100,85,72,62],a:'Mi vecino me tiene mala voluntad, siempre ha sido así.',r:['Puede ser, pero yo sé que no me quiere.','Bueno… igual no me fío de él.','Quizá exagero un poco, pero sigo molesto.'],tag:'Cede parcialmente; carga afectiva intensa'},
+ delirio:{c:[100,100,100,100],a:'Mi vecino instaló cámaras para matarme.',r:['La policía está con él.','Eso prueba que dejó a otros vigilándome.','Ya los convencieron a ustedes también.'],tag:'No cede: reinterpreta la prueba'}};
+const EVID=['La policía revisó la casa y no encontró cámaras.','El vecino estuvo de viaje todo el mes.','Su familia tampoco ve nada extraño.'];
+let bfK='delirio',bfStep=0;
+function bfRender(){const b=BF[bfK];const v=b.c[bfStep];$('bfBar').style.width=v+'%';$('bfVal').textContent=v+'%';$('bfStep').textContent='evidencia '+bfStep+' de 3';
+  const ch=$('bfChat');ch.innerHTML='';ch.appendChild(el('div','msg pt',`<small>Paciente</small>${b.a}`));
+  for(let i=0;i<bfStep;i++){ch.appendChild(el('div','msg dr',`<small>Evidencia ${i+1}</small>${EVID[i]}`));ch.appendChild(el('div','msg pt',`<small>Paciente</small>${b.r[i]}`))}
+  if(bfStep===3)ch.appendChild(el('div','note',`<strong style="color:var(--ink)">${b.tag}.</strong>`));$('bfNext').disabled=bfStep>=3}
+document.querySelectorAll('#bfType .btn').forEach(b=>b.onclick=()=>{bfK=b.dataset.b;bfStep=0;document.querySelectorAll('#bfType .btn').forEach(x=>x.setAttribute('aria-pressed',x===b?'true':'false'));bfRender()});
+$('bfNext').onclick=()=>{if(bfStep<3){bfStep++;bfRender()}};$('bfReset').onclick=()=>{bfStep=0;bfRender()};bfRender();
+
+/* =========================================================
+   03 · Tipos de delirio
+   ========================================================= */
+const DEL=[
+ ['Persecutorio','Convicción de ser vigilado, espiado, perseguido o de que alguien quiere hacerle daño.',['El más frecuente','Puede generar conductas defensivas o agresivas','Común en esquizofrenia paranoide'],'Me siguen a todas partes para hacerme daño.'],
+ ['Celotípico','Convicción infundada de que la pareja le es infiel.',['Busca y reinterpreta “pruebas”','Vigilancia y control de la pareja','Riesgo de violencia; asociado al alcoholismo'],'La mancha en su camisa prueba que me engaña.'],
+ ['De grandeza','Creencia de tener poderes, riqueza, talentos excepcionales o una misión divina.',['Identidad o capacidades exageradas','Frecuente en la manía','Puede llevar a gastos o decisiones arriesgadas'],'Soy el único capaz de salvar la economía del país.'],
+ ['De referencia','Creencia de que todo lo que sucede alrededor se relaciona con él.',['Mensajes en la TV, la radio o internet','Gestos ajenos interpretados como señales','Base de muchos delirios persecutorios'],'El noticiero habló de mí con un código.'],
+ ['De influencia','Convicción de que fuerzas externas controlan sus pensamientos, emociones o actos.',['Pensamientos impuestos o robados','Sensación de ser controlado a distancia','Síntoma característico de la esquizofrenia'],'Una máquina me mete pensamientos en la cabeza.'],
+ ['Somático','Creencia de padecer una enfermedad, deformación o alteración corporal inexistente.',['Parásitos, órganos dañados u olores corporales','Consultas médicas repetidas','No cede ante exámenes normales'],'Tengo gusanos por dentro, aunque los exámenes salgan bien.'],
+ ['Místico','Interpretaciones religiosas o espirituales delirantes de sí mismo o de los hechos.',['Mensajes divinos o revelaciones','Sentirse elegido o un profeta','Distinto de las creencias culturales compartidas'],'Dios me eligió para anunciar el fin del mundo.'],
+ ['Erotomaníaco','Creencia de que una persona, generalmente de mayor estatus, está enamorado de él.',['A menudo una figura pública o desconocida','Interpreta señales de amor inexistentes','Puede terminar en acoso'],'El cantante me manda mensajes de amor en sus canciones.'],
+ ['Nihilista','Negación de la existencia propia, de partes del cuerpo o del mundo.',['“Estoy muerto”, “no tengo órganos”','Síndrome de Cotard','Asociado a depresión psicótica grave'],'Estoy muerto, ya no tengo órganos.'],
+ ['De culpa o ruina','Convicción de haber cometido faltas imperdonables o de estar arruinado.',['Autorreproches desproporcionados','Frecuente en la depresión psicótica','Alto riesgo de suicidio'],'Por mi culpa mi familia lo perdió todo.'],
+ ['De posesión','Creencia de haber cambiado de identidad o de estar poseído por otro ser.',['Poseído por espíritus, demonios o animales','Pérdida de la identidad propia','Vinculado a delirios místicos'],'Ya no soy yo: otro ser vive en mi cuerpo.']];
+function delPick(i){const d=DEL[i];document.querySelectorAll('#dlist button').forEach((b,j)=>b.setAttribute('aria-pressed',i===j?'true':'false'));
+  $('ddet').innerHTML=`<span class="eyebrow" style="color:var(--da)">Tipos de delirio · ${String(i+1).padStart(2,'0')} / 11</span><h3>Delirio ${d[0].toLowerCase()}</h3><p class="q">${d[1]}</p><p class="quote">«${d[3]}»</p><ul class="ticks">${d[2].map(x=>`<li>${x}</li>`).join('')}</ul>`}
+DEL.forEach((d,i)=>{const b=el('button',null,`<b>${String(i+1).padStart(2,'0')}</b><span>${d[0]}</span>`);b.onclick=()=>delPick(i);$('dlist').appendChild(b)});delPick(0);
+
+/* =========================================================
+   04 · Psicosis
+   ========================================================= */
+$('eqBtn').onclick=()=>{const e=$('eq');e.classList.toggle('merged');$('eqBtn').textContent=e.classList.contains('merged')?'Separar los fenómenos':'Combinar los tres fenómenos'};
+
+/* =========================================================
+   05 · Epidemiología
+   ========================================================= */
+for(let i=0;i<100;i++){const d=el('i',i===57?'hit':null);$('dots').appendChild(d)}
+
+/* =========================================================
+   05 · DSM-5
+   ========================================================= */
+const DUR=[1,3,7,14,21,30,45,60,90,120,150,180,240,365,540,730];
+function fmtDur(d){if(d===1)return '1 día';if(d<7)return d+' días';if(d===7)return '1 semana';if(d<30)return (d/7)+' semanas';
+  if(d<365){const mo=d/30;const s=Number.isInteger(mo)?String(mo):mo.toFixed(1).replace('.',',');return s==='1'?'1 mes':s+' meses'}
+  if(d===365)return '1 año';return (d/365).toFixed(1).replace('.0','').replace('.',',')+' años'}
+const tlPos=d=>clamp(Math.log(d)/Math.log(730))*100;
+function dsm(){const sx=[0,1,2,3,4].map(i=>$('sx'+i).checked);const n=sx.filter(Boolean).length;const core=sx[0]||sx[1]||sx[2];
+  const d=DUR[+$('dur').value];$('durOut').textContent=fmtDur(d);const fx=$('fx').checked,mood=$('mood').checked,subs=$('subs').checked,stress=$('stress').checked;
+  const A=n>=2&&core,B=fx,Cc=d>=180;
+  const critRow=(l,ok,txt,fail)=>`<div class="${ok?'met':fail?'fail':''}"><b>${l}</b><span>${txt}</span></div>`;
+  $('crit').innerHTML=critRow('A',A,`<strong>Síntomas:</strong> ${n} de 5 marcados${!core&&n?' · falta delirios, alucinaciones o discurso desorganizado':''}`,!A)+
+    critRow('B',B,'<strong>Disfunción social u ocupacional</strong>',!B)+
+    critRow('C',Cc,`<strong>Duración ≥ 6 meses:</strong> ${fmtDur(d)}`,!Cc);
+  // línea de tiempo
+  $('tl').innerHTML=`<div class="seg" style="left:0;width:${tlPos(30)}%;background:${alpha(C.glu,.55)}"></div><div class="seg" style="left:${tlPos(30)}%;width:${tlPos(180)-tlPos(30)}%;background:${alpha(C.gaba,.55)}"></div><div class="seg" style="left:${tlPos(180)}%;right:0;background:${alpha(C.da,.55)}"></div>`+
+    [[1,'1 día'],[30,'1 mes'],[180,'6 meses'],[730,'2 años']].map(([v,t])=>`<span class="mk" style="left:${clamp(tlPos(v),3,96)}%">${t}</span>`).join('')+`<span class="ptr" style="left:${tlPos(d)}%"></span>`;
+  let h,p,cls='alt';
+  if(subs){h='Trastorno psicótico inducido por sustancias o medicamentos';p='La psicosis se relaciona con consumo, abuso o abstinencia. Desaparece al eliminar la sustancia: desintoxicación y, en algunos casos, antipsicóticos a corto plazo.'}
+  else if(mood&&core){h='Considerar trastorno esquizoafectivo';p='Síntomas de esquizofrenia junto con depresión o manía. También hay que descartar un trastorno del ánimo con síntomas psicóticos.'}
+  else if(!core){h='No cumple el criterio A';p='Al menos uno de los síntomas debe ser delirios, alucinaciones o discurso desorganizado.';cls=''}
+  else if(n===1&&sx[0]&&d>=30){h='Trastorno delirante';p='Delirios fijos y sistematizados durante al menos 1 mes, sin otros síntomas psicóticos prominentes y sin deterioro funcional grave.';cls='yes'}
+  else if(d<30){h='Trastorno psicótico breve';p=`Síntomas súbitos y transitorios, entre 1 día y 1 mes, con recuperación completa.${stress?' El desencadenante por estrés extremo apoya este diagnóstico.':''} Si pasa de 1 mes, el diagnóstico se revisa.`;cls='yes'}
+  else if(n<2){h='No cumple el criterio A';p='Para esquizofreniforme o esquizofrenia se necesitan al menos 2 síntomas durante 1 mes o más.';cls=''}
+  else if(d<180){h='Trastorno esquizofreniforme';p='Cumple el criterio A con una duración entre 1 y 6 meses. Es un diagnóstico transitorio: si persiste más de 6 meses, cambia a esquizofrenia.';cls='yes'}
+  else if(!fx){h='Falta el criterio B';p='Con 6 meses o más de síntomas, la esquizofrenia exige además deterioro en el trabajo, las relaciones o el autocuidado.';cls=''}
+  else{h='Esquizofrenia';p='Cumple A, B y C: al menos 2 síntomas característicos, disfunción social u ocupacional y 6 meses o más, con al menos 1 mes de síntomas activos.';cls='yes'}
+  $('dx').className='dx '+cls;$('dx').innerHTML=`<span class="eyebrow" style="color:var(--muted)">Diagnóstico orientativo</span><h3>${h}</h3><p>${p}</p>`}
+['sx0','sx1','sx2','sx3','sx4','fx','mood','subs','stress'].forEach(i=>$(i).onchange=dsm);$('dur').oninput=dsm;dsm();
+
+/* =========================================================
+   05 · Catatonía
+   ========================================================= */
+let catMode='i';const cat=stage($('cvCat'));
+$('catI').onclick=()=>{catMode='i';$('catI').setAttribute('aria-pressed','true');$('catA').setAttribute('aria-pressed','false');$('catLbl').textContent='inmovilidad extrema'};
+$('catA').onclick=()=>{catMode='a';$('catA').setAttribute('aria-pressed','true');$('catI').setAttribute('aria-pressed','false');$('catLbl').textContent='agitación sin propósito'};
+const catN=[0,0,0,0,0,0];
+function drawCat(dt){const {ctx,w,h}=cat;ctx.clearRect(0,0,w,h);const t=now()*SPEED;const s=Math.min(1.2,h/280);const cx=w*.42,base=h-34;
+  ctx.strokeStyle=C.line;ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(20,base);ctx.lineTo(w-20,base);ctx.stroke();
+  let J;if(catMode==='i'){const br=RM?0:Math.sin(t*1.2)*1.2;
+    J={hip:[0,-90],neck:[0,-170+br],head:[6,-192+br],lh:[-62,-232],le:[-46,-190],rh:[48,-150],re:[30,-140],lk:[-14,-46],lf:[-20,0],rk:[22,-50],rf:[44,-6]}}
+  else{catN.forEach((v,i)=>catN[i]+=((Math.random()-.5)*2-v*.08)*(RM?.2:1));const j=(i,a)=>Math.sin(t*(7+i)+catN[i])*a;
+    J={hip:[j(0,6),-90],neck:[j(1,8),-170],head:[j(1,10),-192],lh:[-60+j(2,40),-150+j(3,60)],le:[-34+j(2,14),-150+j(3,20)],rh:[60+j(4,40),-150+j(5,60)],re:[34+j(4,14),-150+j(5,20)],lk:[-18+j(3,10),-46],lf:[-24+j(2,14),0],rk:[18+j(5,10),-46],rf:[24+j(4,14),0]}}
+  const P=k=>[cx+J[k][0]*s,base+J[k][1]*s];ctx.strokeStyle=catMode==='i'?C.gaba:C.alert;ctx.lineWidth=5;ctx.lineCap='round';
+  const line=(...ks)=>{ctx.beginPath();ks.forEach((k,i)=>{const p=P(k);i?ctx.lineTo(...p):ctx.moveTo(...p)});ctx.stroke()};
+  line('hip','neck');line('neck','le','lh');line('neck','re','rh');line('hip','lk','lf');line('hip','rk','rf');
+  ctx.beginPath();ctx.arc(...P('head'),16*s,0,7);ctx.stroke();
+  const tx=w*.72;const L=catMode==='i'?['Estupor y mutismo','Postura mantenida contra la gravedad','Flexibilidad cérea','Negativismo']:['Actividad motora excesiva','Sin propósito ni respuesta al entorno','Estereotipias','Riesgo de agotamiento y lesiones'];
+  L.forEach((x,i)=>label(ctx,x,tx,40+i*24,i===0?C.ink:C.muted,12,'left',i===0?600:500));
+}
+loops.push([cat,drawCat]);
+
+/* =========================================================
+   06 · Duración comparada
+   ========================================================= */
+(function(){
+  // escala por tramos: cada límite diagnóstico cae en una posición fija y legible
+  const K=[[1,0],[7,14],[30,34],[180,68],[365,84],[730,100]];
+  const P=d=>{for(let i=1;i<K.length;i++){if(d<=K[i][0]){const [d0,p0]=K[i-1],[d1,p1]=K[i];return p0+(Math.log(d)-Math.log(d0))/(Math.log(d1)-Math.log(d0))*(p1-p0)}}return 100};
+  const rows=[
+   ['Psicótico breve',1,30,'var(--glu)','1 día – 1 mes'],
+   ['Esquizofreniforme',30,180,'var(--gaba)','1 – 6 meses'],
+   ['Esquizofrenia',180,730,'var(--da)','≥ 6 meses →'],
+   ['Trastorno delirante',30,730,'var(--drug)','≥ 1 mes · solo delirios →'],
+   ['Inducido por sustancias',1,30,'var(--muted)','Consumo o abstinencia']];
+  const grid=K.map(([d])=>`<b style="left:${P(d)}%"></b>`).join('');
+  const c=$('durChart');c.innerHTML='';
+  rows.forEach(([n,a,b,col,t],i)=>{c.appendChild(el('div','drow',`<strong style="font-family:var(--f-display);font-weight:600">${n}</strong><div class="lane">${grid}<i style="left:${P(a)}%;width:${P(b)-P(a)}%;background:${col};animation-delay:${i*.12}s;${t.length>18?'font-size:11px;letter-spacing:-.02em;':''}" title="${t}">${t}</i></div>`))});
+  const tk=[[1,'1 día'],[7,'1 semana'],[30,'1 mes'],[180,'6 meses'],[365,'1 año'],[730,'2 años']];
+  c.appendChild(el('div','drow',`<span></span><div class="dscale">${tk.map(([v,t],i)=>`<span style="left:${P(v)}%;transform:translateX(${i===0?'0':i===tk.length-1?'-100%':'-50%'})">${t}</span>`).join('')}</div>`));
+  c.appendChild(el('p','note','Las líneas verticales marcan los límites diagnósticos: 1 mes y 6 meses. La escala no es lineal, para que cada tramo se lea con claridad. El trastorno esquizoafectivo no se define por la duración sino por la coexistencia de psicosis y episodios del ánimo. En el inducido por sustancias la duración depende del efecto o de la abstinencia.'));
+})();
+
+/* =========================================================
+   06 · Esquizoafectivo
+   ========================================================= */
+let eaMode='d';const ea=stage($('cvEA'));
+const EA={d:['Tipo depresivo','Psicosis + episodios depresivos','Más frecuente en mujeres.','Mayor riesgo de suicidio.'],b:['Tipo bipolar','Psicosis + episodios maníacos','Más frecuente en hombres.','Más impulsividad y hospitalizaciones.']};
+function eaSet(m){eaMode=m;$('eaD').setAttribute('aria-pressed',m==='d'?'true':'false');$('eaB').setAttribute('aria-pressed',m==='b'?'true':'false');const x=EA[m];$('eaLbl').textContent=x[0].toLowerCase();
+  $('eaTxt').innerHTML=`<strong>${x[1]}.</strong> <span style="color:var(--muted)">${x[2]} ${x[3]}</span>`}
+$('eaD').onclick=()=>eaSet('d');$('eaB').onclick=()=>eaSet('b');eaSet('d');
+function drawEA(dt){const {ctx,w,h}=ea;ctx.clearRect(0,0,w,h);const t=now()*SPEED*.25;const L=16,Rr=w-16,mid=h*.55;
+  label(ctx,'Ánimo',L,16,C.muted,10.5,'left',600);label(ctx,'Psicosis',L,h-14,C.da,10.5,'left',600);
+  ctx.strokeStyle=C.line;ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(L,mid);ctx.lineTo(Rr,mid);ctx.stroke();label(ctx,'eutimia',Rr,mid-8,C.muted,10,'right',500);
+  ctx.strokeStyle=eaMode==='d'?C.gaba:C.glu;ctx.lineWidth=2.5;ctx.beginPath();
+  for(let x=L;x<=Rr;x+=2){const u=(x-L)/(Rr-L)*4+t;const ep=Math.max(0,Math.sin(u*Math.PI))**2;const y=mid+(eaMode==='d'?1:-1)*ep*h*.32;x===L?ctx.moveTo(x,y):ctx.lineTo(x,y)}ctx.stroke();
+  // franja de psicosis: continua, incluye periodos sin ánimo alterado
+  ctx.fillStyle=alpha(C.da,.55);ctx.fillRect(L+(Rr-L)*.08,h-30,(Rr-L)*.84,8);
+  label(ctx,eaMode==='d'?'episodios depresivos':'episodios maníacos',Rr,eaMode==='d'?h*.9-16:24,eaMode==='d'?C.gaba:C.glu,10.5,'right',600)}
+loops.push([ea,drawEA]);
+
+/* =========================================================
+   05 · FISIOPATOLOGÍA (estado compartido)
+   ========================================================= */
+const PRESETS={
+  tipico:  {g:0,e:0,age:25,nmda:1.00,da:0.35,occ:0},
+  prodromo:{g:1,e:1,age:17,nmda:0.70,da:0.62,occ:0},
+  episodio:{g:1,e:1,age:21,nmda:0.45,da:0.90,occ:0},
+  tratado: {g:1,e:1,age:23,nmda:0.45,da:0.90,occ:0.72},
+  ketamina:{g:0,e:0,age:25,nmda:0.25,da:0.58,occ:0}};
+const S=Object.assign({},PRESETS.episodio);let preset='episodio';
+
+const THRESH=45;
+function density(a,g,e){const G=1-Math.exp(-a/1.5);const P=1/(1+Math.exp(-(a-15)/2.5));const k=0.4*(1+0.35*g+0.35*e);return 100*G*(1-k*P)}
+const peakDen=(g,e)=>{let m=0;for(let a=0;a<=30;a+=0.25)m=Math.max(m,density(a,g,e));return m};
+const net=stage($('cvNet'));
+const R1=rng(11);const nodes=[];
+for(let i=0;i<54;i++)nodes.push({x:.05+.9*R1(),y:.1+.8*R1(),ph:R1()*6.28,deg:0});
+for(let it=0;it<60;it++)for(const a of nodes)for(const b of nodes){if(a===b)continue;const dx=a.x-b.x,dy=(a.y-b.y)*.5,d=Math.hypot(dx,dy)||1e-4;if(d<.085){const f=(.085-d)*.08;a.x=clamp(a.x+dx/d*f,.04,.96);a.y=clamp(a.y+dy/d*f,.08,.92)}}
+const edges=[];
+for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++){const a=nodes[i],b=nodes[j];const d=Math.hypot(a.x-b.x,(a.y-b.y)*.5);if(d<.2)edges.push({a,b,k:R1()*(1-d*2.2),al:0})}
+edges.sort((p,q)=>q.k-p.k);
+const sigs=[];
+function drawNet(dt){const {ctx,w,h}=net;ctx.clearRect(0,0,w,h);
+  const d=density(S.age,S.g,S.e);const n=Math.round(edges.length*d/100);
+  nodes.forEach(nd=>nd.deg=0);
+  edges.forEach((e,i)=>{const on=i<n;e.al+=((on?1:0)-e.al)*Math.min(1,dt*3*SPEED);if(on){e.a.deg++;e.b.deg++}});
+  const low=d<THRESH;const col=low?C.alert:C.green;
+  ctx.lineWidth=1.2;
+  for(let i=0;i<edges.length;i++){const e=edges[i];if(e.al<.02)continue;
+    ctx.strokeStyle=i<n?alpha(col,.18+.4*e.al):alpha(C.muted,.35*e.al);
+    ctx.beginPath();ctx.moveTo(e.a.x*w,e.a.y*h);ctx.lineTo(e.b.x*w,e.b.y*h);ctx.stroke()}
+  if(n>0&&Math.random()<dt*SPEED*(4+n*.08)){sigs.push({e:edges[Math.floor(Math.random()*n)],t:0,dir:Math.random()<.5})}
+  for(let i=sigs.length-1;i>=0;i--){const s=sigs[i];s.t+=dt*SPEED*1.4;if(s.t>1||s.e.al<.3){sigs.splice(i,1);continue}
+    const u=s.dir?s.t:1-s.t;const x=(s.e.a.x+(s.e.b.x-s.e.a.x)*u)*w,y=(s.e.a.y+(s.e.b.y-s.e.a.y)*u)*h;
+    ctx.fillStyle=C.glu;ctx.beginPath();ctx.arc(x,y,2.4,0,7);ctx.fill()}
+  const t=now();
+  nodes.forEach(nd=>{const r=3.2+Math.min(nd.deg,8)*.35+(RM?0:Math.sin(t*2+nd.ph)*.5);
+    ctx.fillStyle=nd.deg?C.ink:alpha(C.muted,.45);ctx.beginPath();ctx.arc(nd.x*w,nd.y*h,r,0,7);ctx.fill()});
+  if(HL1==='read'){let best=nodes[0];nodes.forEach(nd=>{if(nd.deg>best.deg&&nd.x>.3&&nd.x<.7)best=nd});callout(ctx,w,best.x*w,best.y*h,12,'neurona',C.ink);
+    const e0=edges.find((e,i)=>i<n&&Math.abs((e.a.x+e.b.x)/2-best.x)>.2);if(e0)callout(ctx,w,(e0.a.x+e0.b.x)/2*w,(e0.a.y+e0.b.y)/2*h,7,'sinapsis',C.green);
+    const sg=sigs[0];if(sg){const u=sg.dir?sg.t:1-sg.t;callout(ctx,w,(sg.e.a.x+(sg.e.b.x-sg.e.a.x)*u)*w,(sg.e.a.y+(sg.e.b.y-sg.e.a.y)*u)*h,6,'señal',C.glu)}}
+  if(HL1==='prune'&&S.age>10)banner(ctx,w,'Las líneas grises son sinapsis que se están podando',C.muted);
+  if(HL1==='isolated'){let first=null;nodes.forEach(nd=>{if(!nd.deg){callout(ctx,w,nd.x*w,nd.y*h,8,null,C.alert);if(!first)first=nd}});
+    if(first)callout(ctx,w,first.x*w,first.y*h,8,'neuronas aisladas',C.alert);banner(ctx,w,'Densidad '+Math.round(d)+'%: la red queda bajo el umbral',C.alert)}
+}
+const curve=stage($('cvCurve'));
+function drawCurve(){const {ctx,w,h}=curve;ctx.clearRect(0,0,w,h);
+  const L=40,Rm=14,T=16,B=30,pw=w-L-Rm,ph=h-T-B;const X=a=>L+a/30*pw,Y=v=>T+(1-v/100)*ph;
+  ctx.fillStyle=alpha(C.glu,.10);ctx.fillRect(X(15),T,X(25)-X(15),ph);
+  ctx.fillStyle=alpha(C.gaba,.10);ctx.fillRect(X(25),T,X(30)-X(25),ph);
+  label(ctx,'Hombres 15–25',X(20),T+9,C.muted,10.5,'center',500);
+  label(ctx,'Mujeres 25–35',X(27.5),T+9,C.muted,10.5,'center',500);
+  ctx.strokeStyle=C.line;ctx.lineWidth=1;
+  for(let v=0;v<=100;v+=25){ctx.beginPath();ctx.moveTo(L,Y(v));ctx.lineTo(L+pw,Y(v));ctx.stroke();label(ctx,v+'%',L-6,Y(v),C.muted,10.5,'right',500)}
+  for(let a=0;a<=30;a+=5)label(ctx,a+'',X(a),h-B+14,C.muted,10.5,'center',500);
+  label(ctx,'años',L+pw,h-B+14,C.muted,10.5,'right',500);
+  ctx.setLineDash([3,4]);ctx.strokeStyle=C.alert;ctx.beginPath();ctx.moveTo(L,Y(THRESH));ctx.lineTo(L+pw,Y(THRESH));ctx.stroke();
+  label(ctx,'umbral de conectividad',L+6,Y(THRESH)+10,C.alert,10.5,'left',500);
+  ctx.strokeStyle=C.muted;ctx.lineWidth=1.5;ctx.beginPath();for(let a=0;a<=30;a+=.25){const p=[X(a),Y(density(a,0,0))];a?ctx.lineTo(...p):ctx.moveTo(...p)}ctx.stroke();
+  ctx.setLineDash([]);
+  if(S.g||S.e){ctx.strokeStyle=C.green;ctx.lineWidth=2.5;ctx.beginPath();for(let a=0;a<=30;a+=.25){const p=[X(a),Y(density(a,S.g,S.e))];a?ctx.lineTo(...p):ctx.moveTo(...p)}ctx.stroke()}
+  const v=density(S.age,S.g,S.e);
+  ctx.strokeStyle=alpha(C.ink,.35);ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(X(S.age),T);ctx.lineTo(X(S.age),T+ph);ctx.stroke();
+  ctx.fillStyle=v<THRESH?C.alert:C.green;ctx.beginPath();ctx.arc(X(S.age),Y(v),5.5,0,7);ctx.fill();
+  ctx.strokeStyle=C.surface;ctx.lineWidth=2;ctx.stroke();
+  const lx=L+8,ly=Y(12);label(ctx,'- - típica',lx,ly,C.muted,10.5,'left',600);
+  if(S.g||S.e)label(ctx,'— con riesgo',lx+62,ly,C.green,10.5,'left',600);
+  if(HL1){let pa=0,pv=0;for(let a=0;a<=30;a+=.25){const q=density(a,S.g,S.e);if(q>pv){pv=q;pa=a}}
+    if(HL1==='read')callout(ctx,w,X(S.age),Y(v),9,'edad actual: '+Math.round(S.age)+' años',C.ink);
+    if(HL1==='peak')callout(ctx,w,X(pa),Y(pv),9,'pico ≈ '+Math.round(pa)+' años',C.green,'r');
+    if(HL1==='prune'&&S.age>pa+2){ctx.strokeStyle=C.glu;ctx.lineWidth=2;ctx.setLineDash([5,4]);ctx.beginPath();ctx.moveTo(X(pa),Y(pv));ctx.lineTo(X(S.age),Y(v));ctx.stroke();ctx.setLineDash([]);
+      callout(ctx,w,X((pa+S.age)/2),Y((pv+v)/2),5,'poda: −'+Math.round(pv-v)+' puntos',C.glu,'l')}
+    if(HL1==='thresh'){ctx.strokeStyle=C.alert;ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(L,Y(THRESH));ctx.lineTo(L+pw,Y(THRESH));ctx.stroke();
+      callout(ctx,w,X(S.age),Y(v),9,v>=THRESH?'por encima del umbral':'bajo el umbral',v>=THRESH?C.green:C.alert,'l')}
+    if(HL1==='cross'||HL1==='isolated'){let ca=null;for(let a=8;a<=30;a+=.1){if(density(a,S.g,S.e)<THRESH){ca=a;break}}
+      if(ca!=null){ctx.strokeStyle=C.alert;ctx.lineWidth=1.5;ctx.setLineDash([3,3]);ctx.beginPath();ctx.moveTo(X(ca),T);ctx.lineTo(X(ca),T+ph);ctx.stroke();ctx.setLineDash([]);
+        callout(ctx,w,X(ca),Y(THRESH),8,'cruza el umbral ≈ '+ca.toFixed(0)+' años',C.alert,'l')}}}
+}
+loops.push([net,(dt)=>{drawNet(dt);drawCurve()}]);
+let playing=false;
+$('play').onclick=()=>{playing=!playing;if(playing&&S.age>=29.9)S.age=0;$('play').textContent=playing?'Pausar':'▶ Reproducir de 0 a 30 años';if(playing)markCustom()};
+
+/* NMDA / GABA */
+const circ=stage($('cvCirc'));
+const P2={};
+function layout2(){const w=circ.w,h=circ.h;const top=h-92;
+  P2.inp={x:w*.11,y:top*.38};P2.int={x:w*.44,y:top*.80};P2.pyr={x:w*.72,y:top*.38};P2.out={x:w*.97,y:top*.38};
+  P2.paths={
+    inPyr:[P2.inp,{x:w*.42,y:top*.22},{x:P2.pyr.x-26,y:P2.pyr.y}],
+    inInt:[P2.inp,{x:w*.2,y:top*.82},{x:P2.int.x-24,y:P2.int.y}],
+    intPyr:[P2.int,{x:w*.66,y:top*.84},{x:P2.pyr.x-4,y:P2.pyr.y+26}],
+    pyrOut:[P2.pyr,{x:w*.85,y:top*.38},P2.out]};
+  P2.top=top;}
+circ.onresize=layout2;layout2();
+const N2={inpF:0,intF:0,pyrF:0,blockF:0,inhibUntil:0,t:0,nextIn:0.3,lfp:new Array(260).fill(0),kick:0,noise:0};
+const spikes=[];
+function spawn(path,kind,cb){spikes.push({path,u:0,kind,cb})}
+function fireInt(){N2.intF=1;spawn('intPyr','gaba',()=>{N2.inhibUntil=N2.t+1.0})}
+function firePyr(){N2.pyrF=1;N2.kick+=1;spawn('pyrOut','glu')}
+function tryPyr(){if(N2.t<N2.inhibUntil&&Math.random()<.85){N2.blockF=1;return}firePyr()}
+function step2(dt){const t=(N2.t+=dt);
+  if(t>=N2.nextIn){N2.inpF=1;N2.nextIn=t+0.18+Math.random()*0.32;
+    spawn('inInt','glu',()=>{if(Math.random()<Math.pow(S.nmda,1.3))fireInt()});
+    spawn('inPyr','glu',()=>{if(Math.random()<.55)tryPyr()})}
+  const spont=0.25+3.2*Math.pow(1-S.nmda,1.2);if(Math.random()<spont*dt)tryPyr();
+  for(let i=spikes.length-1;i>=0;i--){const s=spikes[i];s.u+=dt*(s.kind==='gaba'?1.5:1.25);if(s.u>=1){spikes.splice(i,1);s.cb&&s.cb()}}
+  ['inpF','intF','pyrF','blockF'].forEach(k=>N2[k]=Math.max(0,N2[k]-dt*3));
+  const sync=Math.pow(S.nmda,1.5);N2.noise+=(Math.random()-.5)*.9-N2.noise*.12;
+  const v=sync*Math.sin(t*2*Math.PI*1.9)*.8+(1-sync)*N2.noise*.9+N2.kick*.6;N2.kick*=.75;
+  N2.lfp.push(v);N2.lfp.shift();}
+function drawCirc(dt){const {ctx,w,h}=circ;step2(dt*SPEED);ctx.clearRect(0,0,w,h);const top=P2.top;
+  const curveP=(p,col,lw)=>{const [a,c,b]=P2.paths[p];ctx.strokeStyle=col;ctx.lineWidth=lw;ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.quadraticCurveTo(c.x,c.y,b.x,b.y);ctx.stroke()};
+  curveP('inPyr',alpha(C.glu,.45),2.5);curveP('inInt',alpha(C.glu,.45),2.5);curveP('intPyr',alpha(C.gaba,.55),2.5);curveP('pyrOut',alpha(C.glu,.45),2.5);
+  const e=P2.paths.intPyr[2];ctx.strokeStyle=C.gaba;ctx.lineWidth=4;ctx.beginPath();ctx.moveTo(e.x-10,e.y+5);ctx.lineTo(e.x+8,e.y-6);ctx.stroke();
+  ctx.fillStyle=alpha(C.glu,.7);ctx.beginPath();ctx.moveTo(P2.out.x,P2.out.y);ctx.lineTo(P2.out.x-10,P2.out.y-6);ctx.lineTo(P2.out.x-10,P2.out.y+6);ctx.fill();
+  const nR=6,act=Math.round(nR*S.nmda);
+  for(let i=0;i<nR;i++){const ang=Math.PI*(0.85+i*0.13);const rx=P2.int.x+Math.cos(ang)*36,ry=P2.int.y+Math.sin(ang)*36;
+    ctx.save();ctx.translate(rx,ry);ctx.rotate(ang+Math.PI/2);
+    const on=i<act;ctx.fillStyle=C.glu;ctx.strokeStyle=on?C.glu:C.muted;ctx.lineWidth=1.4;
+    ctx.beginPath();ctx.roundRect(-4,-7,8,14,3);on?ctx.fill():ctx.stroke();
+    if(!on){ctx.beginPath();ctx.moveTo(-5,-8);ctx.lineTo(5,8);ctx.stroke()}ctx.restore()}
+  label(ctx,'NMDA '+act+'/'+nR,P2.int.x-66,P2.int.y+42,C.glu,11,'center',600);
+  spikes.forEach(s=>{const p=qb(P2.paths[s.path],s.u);const col=s.kind==='gaba'?C.gaba:C.glu;ctx.fillStyle=col;ctx.beginPath();ctx.arc(p.x,p.y,4.2,0,7);ctx.fill();
+    ctx.fillStyle=alpha(col,.25);ctx.beginPath();ctx.arc(p.x,p.y,9,0,7);ctx.fill()});
+  const glow=(p,col,f,r)=>{if(f>0){ctx.fillStyle=alpha(col,.28*f);ctx.beginPath();ctx.arc(p.x,p.y,r+16*f,0,7);ctx.fill()}};
+  glow(P2.inp,C.glu,N2.inpF,16);ctx.fillStyle=C.surface;ctx.strokeStyle=C.glu;ctx.lineWidth=2.5;ctx.beginPath();ctx.arc(P2.inp.x,P2.inp.y,16,0,7);ctx.fill();ctx.stroke();
+  glow(P2.int,C.gaba,N2.intF,22);ctx.fillStyle=N2.intF>.1?alpha(C.gaba,.35+.5*N2.intF):C.surface;ctx.strokeStyle=C.gaba;ctx.lineWidth=2.5;ctx.beginPath();ctx.arc(P2.int.x,P2.int.y,22,0,7);ctx.fill();ctx.stroke();
+  const p=P2.pyr;glow(p,C.glu,N2.pyrF,28);ctx.fillStyle=N2.pyrF>.1?alpha(C.glu,.35+.5*N2.pyrF):C.surface;ctx.strokeStyle=C.glu;ctx.lineWidth=2.5;
+  ctx.beginPath();ctx.moveTo(p.x,p.y-30);ctx.lineTo(p.x+27,p.y+20);ctx.lineTo(p.x-27,p.y+20);ctx.closePath();ctx.fill();ctx.stroke();
+  if(N2.blockF>0){ctx.strokeStyle=alpha(C.gaba,N2.blockF);ctx.lineWidth=2;ctx.beginPath();ctx.arc(p.x,p.y-2,36,0,7);ctx.stroke()}
+  label(ctx,'Aferencia',P2.inp.x,P2.inp.y-30,C.ink,12,'center');label(ctx,'glutamatérgica',Math.max(P2.inp.x,48),P2.inp.y+30,C.muted,11,'center',500);
+  label(ctx,'Interneurona PV',P2.int.x+30,P2.int.y-6,C.ink,12,'left');label(ctx,'GABA · el freno',P2.int.x+30,P2.int.y+9,C.gaba,11,'left',500);
+  label(ctx,'Neurona piramidal',p.x,p.y-44,C.ink,12,'center');
+  label(ctx,'salida',P2.out.x-4,P2.out.y-14,C.muted,11,'right',500);
+  const y0=top+14,hh=h-y0-14;ctx.strokeStyle=C.line;ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(12,y0);ctx.lineTo(w-12,y0);ctx.stroke();
+  label(ctx,'Potencial de campo · oscilación gamma (ilustrativa)',14,y0+12,C.muted,10.5,'left',500);
+  const mid=y0+18+(hh-18)/2,amp=(hh-22)/2.6;const sync=Math.pow(S.nmda,1.5);
+  ctx.strokeStyle=sync>.5?C.green:C.alert;ctx.lineWidth=1.8;ctx.beginPath();
+  N2.lfp.forEach((v,i)=>{const x=12+i/(N2.lfp.length-1)*(w-24),y=mid-clamp(v,-1.4,1.4)*amp;i?ctx.lineTo(x,y):ctx.moveTo(x,y)});ctx.stroke();
+  $('mGaba').textContent=S.nmda>.8?'Conservado':S.nmda>.55?'Reducido':'Insuficiente';
+  $('mPyr').textContent=S.nmda>.8?'Normal':S.nmda>.55?'Aumentada':'Desinhibida';
+  $('mSync').textContent=S.nmda>.8?'Coordinada':S.nmda>.55?'Irregular':'Perdida';
+  if(HL2==='input')callout(ctx,w,P2.inp.x,P2.inp.y,26,'excitación de entrada',C.glu,'r');
+  if(HL2==='int')callout(ctx,w,P2.int.x-8,P2.int.y,50,'freno: interneurona con receptores NMDA',C.gaba,'r');
+  if(HL2==='rec')callout(ctx,w,P2.int.x-30,P2.int.y-4,26,'NMDA bloqueados: '+(6-act)+' de 6',C.alert,'l');
+  if(HL2==='pyr')callout(ctx,w,p.x,p.y-2,46,S.nmda>.7?'anillo azul = disparo frenado':'dispara sin freno',S.nmda>.7?C.gaba:C.alert,'l');
+  if(HL2==='lfp'){const col=sync>.5?C.green:C.alert;ctx.strokeStyle=col;ctx.lineWidth=2;ctx.setLineDash([4,3]);ctx.beginPath();ctx.roundRect(8,y0+2,w-16,hh-2,8);ctx.stroke();ctx.setLineDash([]);
+    callout(ctx,w,w-60,y0+2,0.1,sync>.5?'gamma rítmica y sincronizada':'ritmo perdido: actividad desordenada',col,'l')}
+}
+loops.push([circ,drawCirc]);
+$('btnKet').onclick=()=>{animateTo('nmda',0.25);markCustom()};
+$('btnNmdaReset').onclick=()=>{animateTo('nmda',1);markCustom()};
+
+/* Recorridos guiados */
+makeGuide('g1',['Recorrido guiado en 8 pasos','Te explica la red y la curva paso a paso. En cada paso el gráfico cambia solo y una etiqueta señala lo que se describe. Después puedes explorar libremente con los controles.'],[
+ {t:'Cómo leer los gráficos',hl:'read',s:{g:0,e:0,age:3},p:'Arriba, cada <strong>punto</strong> es una neurona y cada <strong>línea</strong> una sinapsis; los puntos naranja que viajan son señales. Abajo, la <strong>curva</strong> muestra la densidad sináptica (eje vertical, en %) según la edad (eje horizontal, en años). El punto marca la edad actual.'},
+ {t:'Infancia: proliferación sináptica',hl:'peak',s:{g:0,e:0,age:5},p:'En los primeros años el cerebro forma muchas más sinapsis de las que necesitará. La red se llena de líneas y la curva sube hasta un <strong>pico</strong> cerca de los 5 años.'},
+ {t:'Adolescencia: poda normal',hl:'prune',s:{g:0,e:0,age:18},p:'Entre los 12 y los 20 años la <strong>poda sináptica</strong> elimina las conexiones más débiles, que se apagan en gris. Es un proceso normal: deja una red más eficiente.'},
+ {t:'Adulto típico: sobre el umbral',hl:'thresh',s:{g:0,e:0,age:25},p:'El adulto conserva cerca del 60% de las sinapsis. La <strong>línea roja punteada</strong> es el umbral de conectividad necesario para funcionar bien (valor ilustrativo). La curva queda por encima.'},
+ {t:'Un solo factor: vulnerabilidad',hl:'thresh',s:{g:1,e:0,age:25},p:'Con variantes genéticas de riesgo pero sin factores ambientales, la poda es mayor: la <strong>curva verde</strong> queda por debajo de la típica (gris punteada), pero sigue encima del umbral. Hay vulnerabilidad sin enfermedad.'},
+ {t:'Genes + ambiente: poda excesiva',hl:'prune',s:{g:1,e:1,age:16},p:'Si se suman factores ambientales (complicaciones obstétricas, infección prenatal, cannabis en la adolescencia, estrés crónico), la poda se intensifica. A los 16 años la red ya pierde conexiones más rápido que la típica.'},
+ {t:'Cruce del umbral: inicio clínico',hl:'cross',s:{g:1,e:1,age:19.5},p:'La curva cruza el umbral cerca de los 19 años, dentro de la franja típica de inicio en hombres (15–25 años). Por eso los síntomas aparecen <strong>años después</strong> de que empezó la vulnerabilidad.'},
+ {t:'Red mal conectada',hl:'isolated',s:{g:1,e:1,age:25},p:'En el adulto queda cerca de un tercio de las sinapsis y aparecen <strong>neuronas aisladas</strong>. Los circuitos se comunican peor, lo que se relaciona con los síntomas negativos y cognitivos.'}],
+ st=>{HL1=st.hl;playing=false;$('play').textContent='▶ Reproducir de 0 a 30 años';S.g=st.s.g;S.e=st.s.e;markCustom();animateTo('age',st.s.age);update()});
+makeGuide('g2',['Recorrido guiado en 8 pasos','Te explica el microcircuito paso a paso: quién excita, quién frena y qué pasa cuando falla el receptor NMDA. En cada paso el circuito cambia solo.'],[
+ {t:'Cómo leer el circuito',hl:'input',s:1,p:'La <strong>aferencia glutamatérgica</strong> (círculo naranja) envía espigas excitadoras (puntos naranja) a dos neuronas: la <strong>piramidal</strong> (triángulo), que es la salida del circuito, y la <strong>interneurona PV</strong> (círculo azul).'},
+ {t:'La interneurona es el freno',hl:'int',s:1,p:'La interneurona se activa gracias a sus <strong>receptores NMDA</strong> (rectángulos naranja). Cuando dispara, envía una espiga azul de GABA que llega a la piramidal por la terminal en T y la inhibe por un momento.'},
+ {t:'Circuito sano: el freno actúa',hl:'pyr',s:1,p:'Cuando la excitación llega a una piramidal que acaba de ser frenada, aparece un <strong>anillo azul</strong>: ese disparo fue bloqueado. La piramidal dispara poco y en el momento justo.'},
+ {t:'Oscilación gamma sincronizada',hl:'lfp',s:1,p:'Abajo está el <strong>potencial de campo</strong>, la suma de la actividad del circuito. Con el freno funcionando, la línea es <strong>verde y rítmica</strong>: es la oscilación gamma que sostiene la atención y la memoria de trabajo.'},
+ {t:'Falla el receptor NMDA',hl:'rec',s:.55,p:'La función NMDA baja al 55% y parte de los receptores aparecen <strong>tachados</strong>. La interneurona responde a menos espigas de entrada y dispara menos.'},
+ {t:'El freno falla: desinhibición',hl:'pyr',s:.35,p:'Con menos GABA casi no hay anillos azules. La piramidal <strong>dispara más</strong> y la salida aumenta, aunque la entrada no cambió. Es la paradoja: menos excitación en la interneurona, más actividad en el circuito.'},
+ {t:'Actividad descoordinada',hl:'lfp',s:.35,p:'El potencial de campo se vuelve <strong>rojo e irregular</strong>: se pierde la oscilación gamma. Clínicamente se relaciona con el pensamiento desorganizado y el déficit de atención y memoria de trabajo.'},
+ {t:'Modelo con ketamina',hl:'rec',s:.25,p:'La ketamina bloquea el receptor NMDA. En voluntarios sanos produce síntomas parecidos a la psicosis, lo que apoya este modelo. Usa el control de abajo para comparar con la función normal.'}],
+ st=>{HL2=st.hl;markCustom();animateTo('nmda',st.s);update()});
+
+/* Dopamina */
+const syn=stage($('cvSyn'));
+const NREC=10;const R3=rng(5);const order=[...Array(NREC).keys()].sort(()=>R3()-.5);
+const recs=[...Array(NREC)].map(()=>({lit:0}));
+const parts=[];let binds=0,d2sig=0,acc=0;
+function drawSyn(dt){const {ctx,w,h}=syn;dt*=SPEED;ctx.clearRect(0,0,w,h);
+  const preB=h*.36,postY=h*.78;const blockedSet=order.slice(0,Math.round(NREC*S.occ));
+  ctx.fillStyle=alpha(C.da,.08);ctx.strokeStyle=alpha(C.da,.6);ctx.lineWidth=2;
+  ctx.beginPath();ctx.moveTo(w*.18,-4);ctx.lineTo(w*.18,preB-30);ctx.quadraticCurveTo(w*.18,preB,w*.3,preB);ctx.lineTo(w*.7,preB);ctx.quadraticCurveTo(w*.82,preB,w*.82,preB-30);ctx.lineTo(w*.82,-4);ctx.fill();ctx.stroke();
+  const t=now();const nv=Math.round(4+12*S.da);const Rv=rng(3);
+  for(let i=0;i<nv;i++){const x=w*(.26+.48*Rv()),y=preB*(.25+.55*Rv())+(RM?0:Math.sin(t*1.5+i)*2);ctx.fillStyle=alpha(C.da,.18);ctx.strokeStyle=alpha(C.da,.7);ctx.lineWidth=1.2;ctx.beginPath();ctx.arc(x,y,7,0,7);ctx.fill();ctx.stroke();
+    ctx.fillStyle=C.da;for(let k=0;k<3;k++){ctx.beginPath();ctx.arc(x-2.5+k*2.5,y+(k%2?1.5:-1.5),1.3,0,7);ctx.fill()}}
+  label(ctx,'Terminal presináptica · vía mesolímbica',w*.5,14,C.muted,11,'center',500);
+  ctx.fillStyle=alpha(C.ink,.05);ctx.strokeStyle=alpha(C.ink,.35);ctx.beginPath();ctx.moveTo(w*.06,h+4);ctx.lineTo(w*.06,postY+20);ctx.quadraticCurveTo(w*.06,postY,w*.16,postY);ctx.lineTo(w*.84,postY);ctx.quadraticCurveTo(w*.94,postY,w*.94,postY+20);ctx.lineTo(w*.94,h+4);ctx.fill();ctx.stroke();
+  label(ctx,'Neurona del estriado asociativo · receptores D2',w*.5,h-12,C.muted,11,'center',500);
+  label(ctx,'hendidura',w*.92,(preB+postY)/2,C.muted,10.5,'right',500);
+  acc+=dt*(2+24*S.da);while(acc>=1){acc--;parts.push({x:w*(.32+.36*Math.random()),y:preB+2,vx:(Math.random()-.5)*30,vy:20+Math.random()*30,life:0})}
+  const rx=i=>w*(.14+.72*i/(NREC-1));
+  for(let i=parts.length-1;i>=0;i--){const q=parts[i];q.life+=dt;q.vx+=(Math.random()-.5)*160*dt;q.vx*=.98;q.vy+=8*dt;q.x+=q.vx*dt;q.y+=q.vy*dt;
+    if(q.y>=postY-7){let hit=-1,bd=1e9;for(let r=0;r<NREC;r++){const d=Math.abs(rx(r)-q.x);if(d<bd){bd=d;hit=r}}
+      if(bd<16&&!blockedSet.includes(hit)&&recs[hit].lit<.2){recs[hit].lit=1;binds++}parts.splice(i,1);continue}
+    if(q.life>4){parts.splice(i,1);continue}
+    ctx.fillStyle=C.da;ctx.beginPath();ctx.arc(q.x,q.y,2.6,0,7);ctx.fill()}
+  for(let r=0;r<NREC;r++){const x=rx(r),y=postY;const isB=blockedSet.includes(r);const L=recs[r];L.lit=Math.max(0,L.lit-dt*1.6);
+    if(L.lit>0){ctx.fillStyle=alpha(C.da,.3*L.lit);ctx.beginPath();ctx.arc(x,y,18,0,7);ctx.fill()}
+    ctx.strokeStyle=isB?C.drug:(L.lit>0?C.da:C.ink);ctx.lineWidth=2.4;ctx.beginPath();ctx.moveTo(x-8,y-9);ctx.lineTo(x-8,y);ctx.quadraticCurveTo(x,y+7,x+8,y);ctx.lineTo(x+8,y-9);ctx.stroke();
+    if(isB){ctx.fillStyle=C.drug;ctx.beginPath();ctx.moveTo(x,y-13);ctx.lineTo(x+6,y-6);ctx.lineTo(x,y+1);ctx.lineTo(x-6,y-6);ctx.closePath();ctx.fill()}}
+  d2sig+=((binds/Math.max(dt,1e-3))/14-d2sig)*Math.min(1,dt*1.2);binds=0;
+  $('tD2').style.width=(clamp(d2sig)*100)+'%';$('mD2').textContent=d2sig>.62?'Alta':d2sig>.36?'Moderada':'Baja';
+}
+loops.push([syn,drawSyn]);
+const STIM=[
+  {n:'Alarma de incendio',rel:.95},
+  {n:'Un carro rojo estacionado frente a la casa',rel:.08,q:'Está ahí para vigilarme',k:'persecutoria'},
+  {n:'Alguien dice tu nombre',rel:.8},
+  {n:'El presentador mira a la cámara',rel:.06,q:'Me está hablando a mí',k:'de referencia'},
+  {n:'Ruido de tráfico',rel:.05,q:'Los motores me mandan una señal',k:'de referencia'},
+  {n:'Semáforo en rojo',rel:.75},
+  {n:'Dos personas ríen en la esquina',rel:.1,q:'Se están burlando de mí',k:'persecutoria'},
+  {n:'Una placa con el número 777',rel:.04,q:'Es un mensaje divino para mí',k:'mística'},
+  {n:'La luz del pasillo parpadea',rel:.07,q:'Alguien manipula la casa para controlarme',k:'de influencia'},
+  {n:'Un vecino cierra la puerta con fuerza',rel:.12,q:'Me están advirtiendo',k:'persecutoria'}];
+let si=0;const shown=[];
+const daEff=()=>S.da*(1-0.8*S.occ);
+const sal=s=>clamp(s.rel*.75+daEff()*.75*(1-s.rel));
+function renderFeed(newest){const f=$('feed');f.innerHTML='';
+  shown.forEach((s,i)=>{const v=sal(s);const ab=s.rel<.5&&v>=.5;const e=el('div','stim'+(ab?' aberr':'')+(i===0&&newest?' new':''));
+    const tag=s.rel>=.5?'Relevante · recibe atención adecuada':ab?`Saliencia aberrante · interpretación ${s.k}: <q>${s.q}</q>`:'Irrelevante · se ignora';
+    e.innerHTML=`<span class="nm">${s.n}</span><span class="sal">${pct(v)}<span class="track"><i style="width:${v*100}%;background:${ab?'var(--da)':s.rel>=.5?'var(--green)':'var(--muted)'}"></i></span></span><span class="tag">${tag}</span>`;
+    f.appendChild(e)});}
+function pushStim(anim){shown.unshift(STIM[si++%STIM.length]);if(shown.length>4)shown.pop();renderFeed(anim)}
+for(let i=0;i<4;i++)pushStim(false);
+setInterval(()=>{if(syn.vis&&!document.hidden)pushStim(!RM)},RM?3600:2200);
+
+/* Integración */
+const NS='http://www.w3.org/2000/svg';const dg=$('dg');
+const DN={
+  A:{x:12,y:128,t:['Genes + ambiente','vulnerabilidad'],c:'glu'},
+  B:{x:162,y:128,t:['Conectividad ↓','poda excesiva'],c:'green'},
+  C:{x:312,y:128,t:['Freno GABA ↓','hipofunción NMDA'],c:'gaba'},
+  D:{x:462,y:40,t:['Dopamina ↑','estriado asociativo'],c:'da'},
+  E:{x:462,y:262,t:['Antipsicótico','bloqueo D2'],c:'drug'},
+  P:{x:618,y:40,t:['Positivos','delirios, alucinaciones'],c:'da'},
+  N:{x:618,y:150,t:['Negativos','abulia, alogia'],c:'glu'},
+  K:{x:618,y:250,t:['Cognitivos','memoria de trabajo'],c:'gaba'}};
+const W=130,H=58;
+const EDGES=[['A','B'],['B','C'],['C','D'],['D','P'],['B','N'],['C','N'],['B','K'],['C','K']];
+const edgeEls={};
+function mk(tag,attrs,parent){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);(parent||dg).appendChild(e);return e}
+function port(n,side){const d=DN[n];return side==='r'?{x:d.x+W,y:d.y+H/2}:{x:d.x,y:d.y+H/2}}
+EDGES.forEach(([a,b])=>{const p=port(a,'r'),q=port(b,'l');const mx=(p.x+q.x)/2;
+  edgeEls[a+b]=mk('path',{class:'edge',d:`M${p.x},${p.y} C${mx},${p.y} ${mx},${q.y} ${q.x},${q.y}`})});
+const dp={x:(DN.D.x+W+DN.P.x)/2,y:DN.D.y+H/2};
+const blockEdge=mk('path',{class:'edge',d:`M${DN.E.x+W/2},${DN.E.y} C${DN.E.x+W/2},${DN.E.y-90} ${dp.x},${dp.y+90} ${dp.x},${dp.y+8}`});
+const blockBar=mk('line',{x1:dp.x-9,y1:dp.y+8,x2:dp.x+9,y2:dp.y+8,'stroke-width':4,'stroke-linecap':'round'});
+const nodeEls={};
+Object.entries(DN).forEach(([k,d])=>{const g=mk('g',{class:'node'});mk('rect',{x:d.x,y:d.y,width:W,height:H,rx:9},g);
+  const f=mk('rect',{class:'fill',x:d.x+1,y:d.y+H-6,width:0,height:5,rx:2},g);
+  mk('text',{x:d.x+12,y:d.y+23},g).textContent=d.t[0];const s=mk('text',{class:'sub',x:d.x+12,y:d.y+40},g);s.textContent=d.t[1];
+  nodeEls[k]={g,f,rect:g.firstChild}});
+function model(){const den=density(S.age,S.g,S.e);const conn=clamp((58-den)/26);const dis=clamp((1-S.nmda)/.85);const dae=daEff();
+  const pos=clamp(1.25*Math.max(0,dae-.36)+.32*dis);const neg=clamp(.6*conn+.45*dis);const cog=clamp(.5*conn+.6*dis);
+  return {den,conn,dis,dae,pos,neg,cog,A:(S.g+S.e)/2,B:conn,C:dis,D:clamp((dae-.3)/.6),E:S.occ/.9};}
+function setBar(id,v,txt){$('t'+id).style.width=(clamp(v)*100)+'%';if($('m'+id))$('m'+id).textContent=txt??pct(v)}
+function update(){const m=model();
+  $('ageOut').textContent=S.age.toFixed(1).replace('.0','')+' años';$('age').value=S.age;$('gen').checked=!!S.g;$('env').checked=!!S.e;
+  const pk=peakDen(S.g,S.e);setBar('Den',m.den/100,Math.round(m.den)+'%');
+  const pr=S.age<6?0:clamp((pk-m.den)/pk);setBar('Prune',pr,pct(pr));
+  $('phase').textContent=S.age<6?'Proliferación sináptica':S.age<24?'Poda adolescente':'Adultez';
+  const st=$('mState');
+  if(m.den<THRESH){st.textContent='Bajo el umbral';st.className='pill bad'}
+  else if((S.g||S.e)&&S.age>10){st.textContent='Vulnerable';st.className='pill warn'}
+  else{st.textContent='Conectividad suficiente';st.className='pill ok'}
+  $('nmda').value=S.nmda;$('nmdaOut').textContent=pct(S.nmda);
+  setBar('Gaba',Math.pow(S.nmda,1.3),$('mGaba').textContent);setBar('Pyr',clamp(.2+.92*Math.pow(1-S.nmda,1.1)),$('mPyr').textContent);setBar('Sync',Math.pow(S.nmda,1.5),$('mSync').textContent);
+  $('da').value=S.da;$('daOut').textContent=pct(S.da);$('occ').value=S.occ;$('occOut').textContent=pct(S.occ);
+  const blocked=Math.round(NREC*S.occ);setBar('Blk',blocked/NREC,blocked+' de '+NREC);
+  const on=$('occNote');on.className=S.occ>.8?'bad':S.occ>=.65?'ok':'';
+  on.textContent=S.occ>.8?'Más de 80%: riesgo de síntomas extrapiramidales e hiperprolactinemia':S.occ>=.65?'Dentro de la ventana terapéutica (65–80%)':'Ventana terapéutica: 65–80%';
+  $('d2Lbl').textContent=S.occ>0?'antipsicótico · D2 '+pct(S.occ):'sin antipsicótico';
+  const sp=$('mSal');const de=m.dae;
+  if(de>.62){sp.textContent='Saliencia aberrante';sp.className='pill bad'}else if(de>.45){sp.textContent='Filtro inestable';sp.className='pill warn'}else{sp.textContent='Filtro conservado';sp.className='pill ok'}
+  renderFeed(false);
+  [['Pos',m.pos],['Neg',m.neg],['Cog',m.cog]].forEach(([k,v])=>{$('t'+k).style.width=(v*100)+'%';$('s'+k).textContent=pct(v)});
+  const colOf=k=>C[DN[k].c];
+  Object.keys(DN).forEach(k=>{const v=k==='P'?m.pos:k==='N'?m.neg:k==='K'?m.cog:m[k];const n=nodeEls[k];
+    n.f.setAttribute('width',Math.max(0,(W-2)*clamp(v)));n.f.setAttribute('fill',colOf(k));n.rect.setAttribute('stroke',v>.5?colOf(k):C.line);n.rect.setAttribute('stroke-width',v>.5?2:1.2)});
+  EDGES.forEach(([a,b])=>{const v=m[a];const e=edgeEls[a+b];e.setAttribute('stroke',v>.15?colOf(a):C.line);e.setAttribute('stroke-width',1.5+4*clamp(v));e.style.animationDuration=(2.4-1.8*clamp(v))+'s';e.style.opacity=.35+.65*clamp(v)});
+  edgeEls.DP.setAttribute('stroke-width',1.5+4*clamp(m.D*(1-S.occ)));
+  blockEdge.setAttribute('stroke',S.occ>0?C.drug:C.line);blockEdge.setAttribute('stroke-width',1.5+3*S.occ);blockEdge.style.opacity=S.occ>0?1:.35;blockBar.setAttribute('stroke',S.occ>0?C.drug:C.line);
+  const r=[];
+  if(m.pos<.2&&m.neg<.2&&m.cog<.2)r.push('<strong>Sin síntomas relevantes.</strong> La poda deja conectividad suficiente, el freno GABA sincroniza el circuito y la dopamina solo marca los estímulos que importan.');
+  else{
+    if(m.pos>=.5)r.push('<strong>Predominan los síntomas positivos.</strong> El exceso de dopamina estriatal da importancia a estímulos neutros, y el paciente los explica con ideas de referencia y persecución.');
+    if(m.dis>=.45)r.push('<strong>Circuito desinhibido.</strong> La hipofunción NMDA apaga a las interneuronas GABA: la actividad piramidal aumenta y se desorganiza, lo que se relaciona con el pensamiento desorganizado y con el déficit cognitivo.');
+    if(m.conn>=.4)r.push('<strong>Conectividad reducida.</strong> La poda excesiva del neurodesarrollo sostiene los síntomas negativos y cognitivos, que suelen aparecer antes y durar más que los positivos.');
+    if(S.age<15&&(S.g||S.e))r.push('<strong>Etapa premórbida.</strong> La vulnerabilidad ya existe, pero la poda todavía no ha reducido la conectividad.');
+    if(m.pos<.5&&m.pos>=.2&&S.occ===0)r.push('<strong>Fase prodrómica.</strong> Hay ideas de referencia atenuadas y retraimiento social, sin psicosis franca.');
+  }
+  if(S.occ>0){r.push(S.occ>=.65?`<strong>El bloqueo D2 (${pct(S.occ)}) reduce los síntomas positivos</strong>, pero no corrige los negativos ni los cognitivos, porque no actúa sobre la conectividad ni sobre el freno GABA.`:`<strong>Ocupación D2 subterapéutica (${pct(S.occ)}).</strong> El efecto sobre los síntomas positivos es parcial.`);
+    if(S.occ>.8)r.push('<strong>Ocupación mayor de 80%:</strong> poca ganancia antipsicótica adicional y más riesgo de efectos extrapiramidales e hiperprolactinemia.');}
+  if(preset==='ketamina')r.push('<strong>Modelo con ketamina:</strong> en un cerebro sin vulnerabilidad, bloquear NMDA basta para producir síntomas psicóticos y cognitivos transitorios.');
+  $('reading').innerHTML='<p class="eyebrow">Lectura clínica del escenario</p>'+r.map(x=>`<p>${x}</p>`).join('');
+}
+function markCustom(){preset=null;document.querySelectorAll('.scen .chip').forEach(c=>c.setAttribute('aria-pressed','false'));$('customLbl').hidden=false}
+const anims=[];
+function animateTo(f,v){if(RM){S[f]=v;update();return}const i=anims.findIndex(a=>a.f===f);if(i>=0)anims.splice(i,1);anims.push({f,from:S[f],to:v,t:0})}
+function applyPreset(k){const p=PRESETS[k];playing=false;HL1=HL2=null;$('play').textContent='▶ Reproducir de 0 a 30 años';
+  S.g=p.g;S.e=p.e;anims.length=0;['age','nmda','da','occ'].forEach(f=>animateTo(f,p[f]));preset=k;
+  document.querySelectorAll('.scen .chip').forEach(c=>c.setAttribute('aria-pressed',c.dataset.p===k?'true':'false'));$('customLbl').hidden=true;update()}
+document.querySelectorAll('.scen .chip').forEach(c=>c.onclick=()=>applyPreset(c.dataset.p));
+['age','nmda','da','occ'].forEach(id=>{$(id).addEventListener('input',e=>{S[id]=parseFloat(e.target.value);const i=anims.findIndex(a=>a.f===id);if(i>=0)anims.splice(i,1);if(id==='age'){playing=false;$('play').textContent='▶ Reproducir de 0 a 30 años'}markCustom();update()})});
+$('gen').onchange=e=>{S.g=e.target.checked?1:0;markCustom();update()};
+$('env').onchange=e=>{S.e=e.target.checked?1:0;markCustom();update()};
+document.querySelector('.scen .chip[data-p="episodio"]').setAttribute('aria-pressed','true');
+
+/* ---------- navegación ---------- */
+const navLinks=[...document.querySelectorAll('.nav a')];
+const navIO=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)navLinks.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('[data-ch]').forEach(s=>navIO.observe(s));
+
+/* ---------- bucle ---------- */
+let last=performance.now(),uiAcc=0;
+function frame(t){const dt=Math.min(.05,(t-last)/1000);last=t;
+  let changed=false;
+  for(let i=anims.length-1;i>=0;i--){const a=anims[i];a.t=Math.min(1,a.t+dt/0.9);const e=a.t<.5?2*a.t*a.t:1-Math.pow(-2*a.t+2,2)/2;S[a.f]=a.from+(a.to-a.from)*e;changed=true;if(a.t>=1)anims.splice(i,1)}
+  if(playing){S.age=Math.min(30,S.age+dt*2.5*SPEED);changed=true;if(S.age>=30){playing=false;$('play').textContent='▶ Reproducir de 0 a 30 años'}}
+  if(changed){uiAcc+=dt;if(uiAcc>.06||!anims.length){uiAcc=0;update()}}
+  for(const [st,fn] of loops){if(st.vis){try{fn(dt)}catch(err){console.error(err)}}}
+  requestAnimationFrame(frame)}
+update();requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
